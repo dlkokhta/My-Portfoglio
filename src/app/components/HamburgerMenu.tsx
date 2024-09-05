@@ -1,7 +1,7 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
-import BurgerMenu from "../assets/hamburger.svg";
+
 import Menu from "../components/Menu";
 
 const HamburgerMenu = () => {
@@ -21,10 +21,13 @@ const HamburgerMenu = () => {
   };
   return (
     <div>
-      <img
+      <Image
         className="relative w-full"
+        alt="hamburger menu icon"
+        width={500}
+        height={500}
         onClick={() => setIsHamburgerOpen(true)}
-        src={BurgerMenu.src}
+        src="/hamburger.svg"
       />
       {isHamburgerOpen && (
         <div
