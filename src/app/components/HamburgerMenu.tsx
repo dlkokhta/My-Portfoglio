@@ -6,6 +6,19 @@ import Menu from "../components/Menu";
 
 const HamburgerMenu = () => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState<boolean>(false);
+
+  const onAboutClick = () => {
+    console.log("onAboutClick");
+  };
+  const onSkillsClick = () => {
+    console.log("onSkillsClick");
+  };
+  const onProjectsClick = () => {
+    console.log("onProjectsClick");
+  };
+  const onContactClick = () => {
+    console.log("onContactClick");
+  };
   return (
     <div>
       <img
@@ -22,7 +35,12 @@ const HamburgerMenu = () => {
             onClick={(e) => e.stopPropagation()}
             className="h-screen w-[150px] cursor-pointer bg-white bg-opacity-5 backdrop-blur-lg text-white font-thin ml-auto p-5 flex flex-col gap-4"
           >
-            <Menu />
+            <Menu
+              onAboutClick={onAboutClick}
+              onSkillsClick={onSkillsClick}
+              onProjectsClick={onProjectsClick}
+              onContactClick={onContactClick}
+            />
           </div>
         </div>
       )}

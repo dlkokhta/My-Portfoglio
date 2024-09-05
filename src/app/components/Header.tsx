@@ -1,24 +1,40 @@
 "use client";
-
-import myPhoto from "../assets/myPhoto.png";
+import Image from "next/image";
 import HamburgerMenu from "../components/HamburgerMenu";
 import Menu from "../components/Menu";
 
 const Header = () => {
+  const onAboutClick = () => {
+    console.log("onAboutClick");
+  };
+  const onSkillsClick = () => {
+    console.log("onSkillsClick");
+  };
+  const onProjectsClick = () => {
+    console.log("onProjectsClick");
+  };
+  const onContactClick = () => {
+    console.log("onContactClick");
+  };
   return (
-    <main className="px-7 pt-10">
+    <main>
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-5">
           <div className="rounded-full overflow-hidden w-12 h-12 bg-yellow-300">
-            <img src={myPhoto.src} alt="My Photo" />
+            <Image src="/myPhoto.png" alt="My Photo" width={500} height={500} />
           </div>
           <h1 className="font-bold text-md text-white">Dimitri Kokhtashvili</h1>
         </div>
         <div className="md:hidden">
           <HamburgerMenu />
         </div>
-        <div className="text-white hidden flex:none md:flex flex-row gap-5">
-          <Menu />
+        <div className="text-white hidden flex:none md:flex flex-row gap-5 ">
+          <Menu
+            onAboutClick={onAboutClick}
+            onSkillsClick={onSkillsClick}
+            onProjectsClick={onProjectsClick}
+            onContactClick={onContactClick}
+          />
         </div>
       </div>
       {/* <div className="to-transparen h-[0.5px] bg-gradient-to-r from-transparent via-slate-300"></div> */}
