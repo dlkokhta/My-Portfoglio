@@ -1,5 +1,9 @@
 const SkillsDetails = ({ name }: any) => {
-  return <div className="">{name}</div>;
+  return (
+    <button className="border rounded-full bg-green-900  px-2 py-1  text-sm w-full h-full">
+      {name}
+    </button>
+  );
 };
 
 export default SkillsDetails;
