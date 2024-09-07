@@ -36,7 +36,7 @@ const HamburgerMenu = () => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="h-screen w-[150px] cursor-pointer bg-white bg-opacity-5 backdrop-blur-lg text-white font-thin ml-auto p-5 flex flex-col gap-4"
+            className="h-screen w-[150px] cursor-pointer bg-white bg-opacity-5 backdrop-blur-lg  font-thin ml-auto p-5 flex flex-col gap-4"
           >
             <Menu
               onAboutClick={onAboutClick}
