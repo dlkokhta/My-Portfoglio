@@ -18,7 +18,7 @@ const Header = () => {
   };
   return (
     <main>
-      <div className="fixed flex justify-between items-center px-7 py-5 w-full bg-[#e5e7eb]">
+      <div className="fixed flex justify-between items-center px-7 py-5 w-full bg-[#0a192f] text-white z-50">
         <div className="flex items-center gap-5">
           <div className="rounded-full overflow-hidden w-12 h-12 bg-yellow-300">
             <Image src="/myPhoto.png" alt="My Photo" width={500} height={500} />

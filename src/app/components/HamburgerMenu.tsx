@@ -22,7 +22,7 @@ const HamburgerMenu = () => {
   return (
     <div>
       <Image
-        className="relative w-full"
+        className="relative w-full cursor-pointer"
         alt="hamburger menu icon"
         width={500}
         height={500}
