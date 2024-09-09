@@ -12,7 +12,7 @@ const Skills = () => {
             Programming Languages, Libraries, frameworks and tools:
           </h4>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 text-black">
             <SkillsDetails name="Javascript" />
             <SkillsDetails name="TypeScript" />
             <SkillsDetails name="C#" />

@@ -22,7 +22,7 @@ const HamburgerMenu = () => {
   return (
     <div>
       <Image
-        className="relative w-full cursor-pointer"
+        className="relative w-full cursor-pointer animate-bounce hover:animate-none"
         alt="hamburger menu icon"
         width={500}
         height={500}
@@ -36,14 +36,16 @@ const HamburgerMenu = () => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="h-screen w-[150px] cursor-pointer bg-white bg-opacity-5 backdrop-blur-lg  font-thin ml-auto p-5 flex flex-col gap-4"
+            className="h-screen w-[150px]  bg-white bg-opacity-5 backdrop-blur-lg  font-thin ml-auto p-5 flex flex-col gap-4"
           >
-            <Menu
-              onAboutClick={onAboutClick}
-              onSkillsClick={onSkillsClick}
-              onProjectsClick={onProjectsClick}
-              onContactClick={onContactClick}
-            />
+            <div className="flex flex-col gap-4">
+              <Menu
+                onAboutClick={onAboutClick}
+                onSkillsClick={onSkillsClick}
+                onProjectsClick={onProjectsClick}
+                onContactClick={onContactClick}
+              />
+            </div>
           </div>
         </div>
       )}
