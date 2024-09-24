@@ -130,7 +130,7 @@ const Projects = () => {
         <h2 className="mb-2">space-tourism-website</h2>
         <div className="pb-10 ">
           <a
-            href="https://space-tourism-website-main-navy.vercel.app/"
+            href="https://password-generator-nine-lake.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -145,8 +145,86 @@ const Projects = () => {
           <div className="flex justify-between">
             <ProjectSVG
               title="Front-end"
-              pageLink="https://space-tourism-website-main-navy.vercel.app/"
-              githubLink="https://github.com/dlkokhta/space-tourism-website-main"
+              pageLink="https://password-generator-nine-lake.vercel.app/"
+              githubLink="https://github.com/dlkokhta/Password-Generator"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center ">
+        <h2 className="mb-2">todo-app</h2>
+        <div className="pb-10 ">
+          <a
+            href="https://todo-app-sigma-beryl.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/todo-app.png"
+              alt="todo-app image"
+              width={500}
+              height={500}
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+            />
+          </a>
+          <div className="flex justify-between">
+            <ProjectSVG
+              title="Front-end"
+              pageLink="https://todo-app-sigma-beryl.vercel.app/"
+              githubLink="https://github.com/dlkokhta/todo-app"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center ">
+        <h2 className="mb-2">devjobs-web-app</h2>
+        <div className="pb-10 ">
+          <a
+            href="https://todo-app-sigma-beryl.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/devjobs-web-app.png"
+              alt="devjobs-web-app image"
+              width={500}
+              height={500}
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+            />
+          </a>
+          <div className="flex justify-between">
+            <ProjectSVG
+              title="Front-end"
+              pageLink="https://todo-app-sigma-beryl.vercel.app/"
+              githubLink="https://github.com/dlkokhta/todo-app"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center ">
+        <h2 className="mb-2">devjobs-web-app</h2>
+        <div className="pb-10 ">
+          <a
+            href="https://dictionary-web-app-drab.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/dictionary-web-app.png"
+              alt="dictionary-web-app image"
+              width={500}
+              height={500}
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+            />
+          </a>
+          <div className="flex justify-between">
+            <ProjectSVG
+              title="Front-end"
+              pageLink="https://dictionary-web-app-drab.vercel.app/"
+              githubLink="https://github.com/dlkokhta/dictionary-web-app"
             />
           </div>
         </div>
