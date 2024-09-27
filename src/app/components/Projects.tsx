@@ -182,7 +182,7 @@ const Projects = () => {
         <h2 className="mb-2">devjobs-web-app</h2>
         <div className="pb-10 ">
           <a
-            href="https://todo-app-sigma-beryl.vercel.app/"
+            href="https://devjobs-web-app-three.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -197,15 +197,15 @@ const Projects = () => {
           <div className="flex justify-between">
             <ProjectSVG
               title="Front-end"
-              pageLink="https://todo-app-sigma-beryl.vercel.app/"
-              githubLink="https://github.com/dlkokhta/todo-app"
+              pageLink="https://devjobs-web-app-three.vercel.app/"
+              githubLink="https://github.com/dlkokhta/devjobs-web-app"
             />
           </div>
         </div>
       </div>
 
       <div className="flex flex-col items-center ">
-        <h2 className="mb-2">devjobs-web-app</h2>
+        <h2 className="mb-2">dictionary-web-app</h2>
         <div className="pb-10 ">
           <a
             href="https://dictionary-web-app-drab.vercel.app/"
@@ -225,6 +225,58 @@ const Projects = () => {
               title="Front-end"
               pageLink="https://dictionary-web-app-drab.vercel.app/"
               githubLink="https://github.com/dlkokhta/dictionary-web-app"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center ">
+        <h2 className="mb-2">planets-fact-site</h2>
+        <div className="pb-10 ">
+          <a
+            href="https://planets-fact-site-orpin.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/planets-fact-site.png"
+              alt="planets-fact-site image"
+              width={500}
+              height={500}
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+            />
+          </a>
+          <div className="flex justify-between">
+            <ProjectSVG
+              title="Front-end"
+              pageLink="https://planets-fact-site-orpin.vercel.app"
+              githubLink="https://github.com/dlkokhta/planets-fact-site"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center ">
+        <h2 className="mb-2">rest-countries-app</h2>
+        <div className="pb-10 ">
+          <a
+            href="https://rest-countries-api-with-color-theme-switcher-master-smoky.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/rest-countries-app.png"
+              alt="rest-countries-app image"
+              width={500}
+              height={500}
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+            />
+          </a>
+          <div className="flex justify-between">
+            <ProjectSVG
+              title="Front-end"
+              pageLink="https://rest-countries-api-with-color-theme-switcher-master-smoky.vercel.app/"
+              githubLink="https://github.com/dlkokhta/rest-countries-api-with-color-theme-switcher-master"
             />
           </div>
         </div>
