@@ -1,22 +1,29 @@
-interface menuClickTypes {
-  onAboutClick: any;
-  onSkillsClick: any;
-  onProjectsClick: any;
-  onContactClick: any;
-}
-
-const Menu: React.FC<menuClickTypes> = ({
-  onAboutClick,
-  onSkillsClick,
-  onProjectsClick,
-  onContactClick,
-}) => {
+import { Link } from "react-scroll";
+const Menu = ({}) => {
   return (
     <>
-      <h1 onClick={onAboutClick}>About</h1>
-      <h1 onClick={onSkillsClick}>Skills</h1>
-      <h1 onClick={onProjectsClick}>Projects</h1>
-      <h1 onClick={onContactClick}>Contact Me</h1>
+      <Link to="about" smooth={true} duration={500} className="cursor-pointer">
+        <h1>About</h1>
+      </Link>
+      <Link to="skills" smooth={true} duration={500} className="cursor-pointer">
+        <h1>Skills</h1>
+      </Link>
+      <Link
+        to="projects"
+        smooth={true}
+        duration={500}
+        className="cursor-pointer"
+      >
+        <h1>Projects</h1>
+      </Link>
+      <Link
+        to="contact"
+        smooth={true}
+        duration={500}
+        className="cursor-pointer"
+      >
+        <h1>Contact Me</h1>
+      </Link>
       <a
         href="/Resume.pdf"
         target="_blank"

@@ -6,9 +6,15 @@ import Projects from "../components/Projects";
 const HomePage = () => {
   return (
     <main className="px-7 pt-5 pb-40">
-      <About />
-      <Skills />
-      <Projects />
+      <div id="about" className="section">
+        <About />
+      </div>
+      <div id="skills" className="section">
+        <Skills />
+      </div>
+      <div id="projects" className="section">
+        <Projects />
+      </div>
     </main>
   );
 };

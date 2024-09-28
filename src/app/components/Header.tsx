@@ -7,18 +7,6 @@ import useScrollDirection from "../hooks/useScrollDirection";
 const Header = () => {
   const { isScrollingDown } = useScrollDirection();
 
-  const onAboutClick = () => {
-    console.log("onAboutClick");
-  };
-  const onSkillsClick = () => {
-    console.log("onSkillsClick");
-  };
-  const onProjectsClick = () => {
-    console.log("onProjectsClick");
-  };
-  const onContactClick = () => {
-    console.log("onContactClick");
-  };
   return (
     <div
       className={`fixed top-0 left-0 w-full bg-[#0a192f] text-white z-50 transition-transform duration-500 ${
@@ -30,18 +18,13 @@ const Header = () => {
           <div className="rounded-full overflow-hidden w-12 h-12 bg-yellow-300">
             <Image src="/myPhoto.png" alt="My Photo" width={500} height={500} />
           </div>
-          <h1 className="font-bold text-md ">Dimitri Kokhtashvili</h1>
+          <h1 className="font-bold text-2xl ">Dimitri Kokhtashvili</h1>
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden ">
           <HamburgerMenu />
         </div>
         <div className=" hidden flex:none md:flex flex-row gap-5 ">
-          <Menu
-            onAboutClick={onAboutClick}
-            onSkillsClick={onSkillsClick}
-            onProjectsClick={onProjectsClick}
-            onContactClick={onContactClick}
-          />
+          <Menu />
         </div>
       </div>
     </div>

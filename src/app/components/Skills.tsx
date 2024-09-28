@@ -3,7 +3,7 @@ import SkillsDetails from "../components/SkillsDetails";
 const Skills = () => {
   return (
     <>
-      <section className="  mt-10 text-white ">
+      <section className=" mt-10 text-white ">
         <h1 className="text-center text-xl font-bold">Skills</h1>
         <div>
           <div className="flex flex-wrap gap-3"></div>
