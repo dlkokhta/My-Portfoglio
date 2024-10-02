@@ -6,7 +6,7 @@ import Contact from "../components/Contact";
 
 const HomePage = () => {
   return (
-    <main className="px-7 pt-5 pb-40">
+    <main className="px-7 pt-5 pb-20">
       <div id="about" className="section">
         <About />
       </div>

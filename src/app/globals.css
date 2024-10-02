@@ -11,6 +11,8 @@
     width: 100vw;
     max-height: 100vh;
     background-color: #0a192f;
+   
+    
   }
   
   #root {
@@ -24,8 +26,8 @@
   }
 
   .section {
-  padding-top: 50px; /* Adjust this value as needed */
-  margin-top: -50px; /* Same value as padding-top */
+  padding-top: 50px; 
+  margin-top: -50px; 
 }
 
   .btn-custom {
@@ -36,20 +38,22 @@
     position: relative;
     cursor: pointer;
     font-size: 16px;
-    transition: all 0.3s ease; /* Smooth transition for movement */
+    transition: all 0.3s ease; 
   }
   
 
   .btn-custom:hover {
-    /* Shadow effect when hovered or touched */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow on right and bottom */
-    transform: translate(-5px, -5px); /* Slight movement when hovered */
+   
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    transform: translate(-5px, -5px);
   }
   
   .btn-custom:active {
-    /* When clicked, move to the top-left */
+   
     transform: translate(-10px, -10px); 
-    box-shadow: none; /* Remove shadow when clicked */
+    box-shadow: none; 
   }
 
-  
+  /* * {
+    outline: 1px solid red;
+  } */
