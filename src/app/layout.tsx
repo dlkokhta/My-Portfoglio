@@ -21,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Header />
+        <div className="lg:hidden">
+          <Header />
+        </div>
         {children}
       </body>
     </html>

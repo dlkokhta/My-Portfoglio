@@ -2,8 +2,10 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <div>
-      <h1 className="text-center text-xl font-bold text-white ">Contact Me</h1>
-      <div className="mt-10 flex justify-between px-10 md:px-52">
+      <h1 className="text-center text-xl font-bold text-white lg:hidden">
+        Contact
+      </h1>
+      <div className="mt-10 flex justify-between px-10 md:px-40 lg:px-0 lg:gap-5">
         <a href="https://www.linkedin.com/in/dimitri-kokhtashvili-6a816a297/">
           <Image
             src="/linkedin.png"
@@ -44,9 +46,6 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <footer className="text-center text-white mt-14">
-        <p>© 2024 | Built with by Dimitri Kokhtashvili.</p>
-      </footer>
     </div>
   );
 };

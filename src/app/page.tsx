@@ -35,7 +35,7 @@ export default function Home() {
           content="https://my-portfoglio.vercel.app/myPhoto.png"
         />
       </Head>
-      <main className="">
+      <main className="w-full ">
         <HomePage />
       </main>
     </>

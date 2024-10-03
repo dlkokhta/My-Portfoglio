@@ -20,7 +20,7 @@ const Menu = ({}) => {
         to="contact"
         smooth={true}
         duration={500}
-        className="cursor-pointer"
+        className="cursor-pointer lg:hidden"
       >
         <h1>Contact Me</h1>
       </Link>

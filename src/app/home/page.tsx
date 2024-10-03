@@ -3,21 +3,28 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Header2 from "../components/Header2";
 
 const HomePage = () => {
   return (
-    <main className="px-7 pt-5 pb-20">
-      <div id="about" className="section">
-        <About />
+    <main className="px-7 pt-5 pb-20 md:px-20 w-full flex flex-row gap-[370px] lg:px-32">
+      <div>
+        <Header2 />
       </div>
-      <div id="skills" className="section">
-        <Skills />
-      </div>
-      <div id="projects" className="section">
-        <Projects />
-      </div>
-      <div id="contact" className="section">
-        <Contact />
+      <div>
+        <div id="about" className="section ">
+          <About />
+        </div>
+        <div id="skills" className="section ">
+          <Skills />
+        </div>
+
+        <div id="projects" className="section">
+          <Projects />
+        </div>
+        <div id="contact" className="section lg:hidden">
+          <Contact />
+        </div>
       </div>
     </main>
   );
