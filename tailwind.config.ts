@@ -6,15 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
-  },
+
   screens: {
     sm: "640px",
 
@@ -27,6 +19,8 @@ const config: Config = {
     "2xl": "1536px",
 
     "3xl": "1836px",
+
+    "4xl": "1920px",
   },
 
   plugins: [],

@@ -5,7 +5,7 @@ const Contact = () => {
       <h1 className="text-center text-xl font-bold text-white lg:hidden">
         Contact
       </h1>
-      <div className="mt-10 flex justify-between px-10 md:px-40 lg:px-0 lg:gap-5">
+      <div className="mt-10 flex justify-between px-10 md:px-40 lg:px-0 lg:gap-8">
         <a href="https://www.linkedin.com/in/dimitri-kokhtashvili-6a816a297/">
           <Image
             src="/linkedin.png"
