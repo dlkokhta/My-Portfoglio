@@ -15,7 +15,7 @@ const useScrollDirection = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrollY]);
 
-  return { isScrollingDown };
+  return { isScrollingDown, scrollY }; // Return scrollY
 };
 
 export default useScrollDirection;

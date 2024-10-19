@@ -7,7 +7,7 @@ import Header2 from "../components/Header2";
 
 const HomePage = () => {
   return (
-    <main className="px-7 sm:px-20 pt-5 pb-20 md:px-20 w-full flex flex-row gap-[370px] lg:gap-[420px] lg2:px-48  xl:gap-[450px] xl:px-60">
+    <main className="px-7 sm:px-20 pt-5 pb-20 md:px-20 w-full flex flex-row gap-[370px] lg:gap-[420px] xl:gap-[450px] xl:px-60">
       <div className="hidden lg:block">
         <Header2 />
       </div>

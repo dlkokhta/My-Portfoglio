@@ -6,6 +6,7 @@ import useScrollDirection from "../hooks/useScrollDirection";
 
 const Header = () => {
   const { isScrollingDown } = useScrollDirection();
+  console.log(isScrollingDown);
 
   return (
     <div
