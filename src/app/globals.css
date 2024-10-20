@@ -55,6 +55,10 @@
     box-shadow: none; 
   }
 
+  .active {
+    color: rgb(95, 91, 91);
+  }
+
   /* * {
     outline: 1px solid red;
   } */
