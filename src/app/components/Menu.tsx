@@ -1,6 +1,8 @@
 import { Link } from "react-scroll";
+import { use, useState } from "react";
 
 const Menu = () => {
+  const [clicked, setClicked] = useState(false);
   return (
     <>
       <Link
@@ -8,7 +10,7 @@ const Menu = () => {
         smooth={true}
         duration={500}
         spy={true}
-        activeClass="active"
+        activeClass={`clicked ? "text-gray-400" : ""`}
         className="cursor-pointer"
       >
         <div className="w-full flex items-center">
@@ -23,6 +25,7 @@ const Menu = () => {
         spy={true}
         activeClass="active"
         className="cursor-pointer"
+        onClick={() => setClicked(true)}
       >
         <h1>SKILLS</h1>
       </Link>

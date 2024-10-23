@@ -11,7 +11,6 @@ const HomePage = () => {
       <div className="hidden lg:block">
         <Header2 />
       </div>
-
       <div>
         <div id="about" className="section ">
           <About />
