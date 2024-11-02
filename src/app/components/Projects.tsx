@@ -4,36 +4,85 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div className="mt-10 text-white">
+    <div className="mt-20 text-white">
       <h1 className="text-xl font-bold mb-5 text-center">Projects</h1>
-
       <div className="flex flex-col items-center">
         <h2 className="mb-2">E-commerce</h2>
         <div className="pb-10 ">
-          <a
-            href="https://ecommerce-front-end-five.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <div className="relative overflow-hidden group">
             <Image
               src="/Ecommerce.png"
               alt="Ecommerce app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer "
+              className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
             />
-          </a>
-          <div className="flex justify-between">
-            <ProjectSVG
-              title="Front-end"
-              pageLink="https://ecommerce-front-end-five.vercel.app/"
-              githubLink="https://github.com/dlkokhta/EcommerceFrontEnd"
-            />
-            <ProjectSVG
-              title="Back-end"
-              pageLink="https://ecommerceapi-production-7d9c.up.railway.app/"
-              githubLink="https://github.com/dlkokhta/EcommerceAPI"
-            />
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-700 text-white p-4">
+              <div className="relative cursor-pointer">
+                <ul
+                  style={{
+                    scrollbarWidth: "none" /* Firefox */,
+                    msOverflowStyle: "none" /* IE and Edge */,
+                  }}
+                  className="text-xs list-disc pl-6 font-normal max-h-32 overflow-y-auto md:max-h-full"
+                >
+                  <li>User registration with email verification</li>
+                  <li>Password recovery with secure OTP verification</li>
+                  <li>User password change</li>
+                  <li>
+                    Admin panel for add, delete items and viewing registered
+                    user list
+                  </li>
+                  <li>Product filters to refine searches</li>
+                  <li>
+                    Checkout feature with a summary email detailing purchase
+                  </li>
+                  <li>No payment system integration</li>
+                  <li>
+                    Checkout email links to the user’s orders page, showing
+                    completed orders
+                  </li>
+                  <li>
+                    Clear Error Messages: Instant feedback for registration,
+                    login, OTP verification, and password recovery, covering
+                    invalid credentials, OTPs, and unregistered emails.
+                  </li>
+                  <li>
+                    Live inventory checks directly from the database based on
+                    item selection
+                  </li>
+                </ul>
+
+                <div className="absolute lg:hidden  left-1/2 transform -translate-x-1/2 animate-bounce">
+                  <svg
+                    className="w-4 h-4 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="flex justify-between w-full p-5">
+                <ProjectSVG
+                  title="Front-end"
+                  pageLink="https://ecommerce-front-end-five.vercel.app/"
+                  githubLink="https://github.com/dlkokhta/EcommerceFrontEnd"
+                />
+                <ProjectSVG
+                  title="Back-end"
+                  pageLink="https://ecommerceapi-production-7d9c.up.railway.app/"
+                  githubLink="https://github.com/dlkokhta/EcommerceAPI"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -51,7 +100,7 @@ const Projects = () => {
               alt="Entertainment-web-app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
             />
           </a>
           <div className="flex justify-between">
@@ -82,7 +131,7 @@ const Projects = () => {
               alt="Memory game app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
             />
           </a>
           <div className="flex justify-between">
@@ -108,7 +157,7 @@ const Projects = () => {
               alt="space-tourism-website app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
             />
           </a>
           <div className="flex justify-between">
@@ -139,7 +188,7 @@ const Projects = () => {
               alt="password-generator app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
             />
           </a>
           <div className="flex justify-between">
@@ -165,7 +214,7 @@ const Projects = () => {
               alt="todo-app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
             />
           </a>
           <div className="flex justify-between">
@@ -191,7 +240,7 @@ const Projects = () => {
               alt="devjobs-web-app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
             />
           </a>
           <div className="flex justify-between">
@@ -217,7 +266,7 @@ const Projects = () => {
               alt="dictionary-web-app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
             />
           </a>
           <div className="flex justify-between">
@@ -243,7 +292,7 @@ const Projects = () => {
               alt="planets-fact-site image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
             />
           </a>
           <div className="flex justify-between">
@@ -269,7 +318,7 @@ const Projects = () => {
               alt="rest-countries-app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer"
+              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
             />
           </a>
           <div className="flex justify-between">

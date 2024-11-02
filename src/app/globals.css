@@ -55,6 +55,10 @@
     box-shadow: none; 
   }
 
+  .hover-effect p:hover {
+    background-color: cyan;
+    
+  }
   
 
   /* * {
