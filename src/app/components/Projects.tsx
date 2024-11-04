@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="flex flex-col items-center">
         <h2 className="mb-2">E-commerce</h2>
         <div className="pb-10 ">
-          <div className="relative overflow-hidden group">
+          <div className="relative overflow-hidden group ">
             <Image
               src="/Ecommerce.png"
               alt="Ecommerce app image"
@@ -17,15 +17,18 @@ const Projects = () => {
               height={500}
               className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
             />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-700 text-white p-4">
+            <div className="absolute pt-5 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity duration-700 text-white px-3">
               <div className="relative cursor-pointer">
                 <ul
                   style={{
                     scrollbarWidth: "none" /* Firefox */,
                     msOverflowStyle: "none" /* IE and Edge */,
                   }}
-                  className="text-xs list-disc pl-6 font-normal max-h-32 overflow-y-auto md:max-h-full"
+                  className="text-xs lg:text-[13px] list-disc pl-6 font-normal max-h-40 overflow-y-auto md:max-h-full "
                 >
+                  <h3 className="font-bold underline mb-2 text-xs lg:text-[18px] ">
+                    Project Description
+                  </h3>
                   <li>User registration with email verification</li>
                   <li>Password recovery with secure OTP verification</li>
                   <li>User password change</li>
@@ -51,9 +54,17 @@ const Projects = () => {
                     Live inventory checks directly from the database based on
                     item selection
                   </li>
+
+                  <h3 className="font-bold underline mt-2 text-xs lg:text-[18px] mb-2">
+                    Technologies
+                  </h3>
+                  <h4>
+                    React, TypeScript, Redux, Node.js, Express, MongoDB, Yup,
+                    Joi, Nodemailer
+                  </h4>
                 </ul>
 
-                <div className="absolute lg:hidden  left-1/2 transform -translate-x-1/2 animate-bounce">
+                <div className="absolute  left-1/2 transform -translate-x-1/2 animate-bounce md:hidden">
                   <svg
                     className="w-4 h-4 text-gray-400"
                     fill="none"
@@ -70,7 +81,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="flex justify-between w-full p-5">
+              <div className="flex justify-between w-full p-5 mt-auto">
                 <ProjectSVG
                   title="Front-end"
                   pageLink="https://ecommerce-front-end-five.vercel.app/"

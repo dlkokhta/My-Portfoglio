@@ -3,7 +3,7 @@ import Contact from "./Contact";
 
 const Header2 = () => {
   return (
-    <div className="text-white hidden lg:block font-light mt-20">
+    <div className="text-white hidden lg:block font-light">
       <div className="fixed mt-[30px] xl:mt-[100px]">
         <h1 className="text-4xl font-extrabold mb-3">Dimitri Kokhtashvili</h1>
         <h2 className="text-center">Full Stack Developer</h2>
