@@ -17,7 +17,7 @@ const Projects = () => {
               height={500}
               className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
             />
-            <div className="absolute pt-5 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity duration-700 text-white px-3">
+            <div className="absolute pt-5 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
               <div className="relative cursor-pointer">
                 <ul
                   style={{
