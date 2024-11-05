@@ -218,30 +218,64 @@ const Projects = () => {
       <div className="flex flex-col items-center ">
         <h2 className="mb-2">space-tourism-website</h2>
         <div className="pb-10 ">
-          <a
-            href="https://space-tourism-website-main-navy.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <div className="relative overflow-hidden group ">
             <Image
               src="/space-tourism-websit.png"
               alt="space-tourism-website app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
+              className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
             />
-          </a>
-          <div className="flex justify-between">
-            <ProjectSVG
-              title="Front-end"
-              pageLink="https://space-tourism-website-main-navy.vercel.app/"
-              githubLink="https://github.com/dlkokhta/space-tourism-website-main"
-            />
-            <ProjectSVG
-              title="Front-end"
-              pageLink="https://space-tourism-website-main-api-2-production.up.railway.app/"
-              githubLink="https://github.com/dlkokhta/space-tourism-website-main-API-2"
-            />
+
+            <div className="absolute pt-10 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
+              <div className="relative cursor-pointer">
+                <ul className="text-xs lg:text-[13px] list-disc pl-6 font-normal max-h-40 overflow-y-auto md:max-h-full ">
+                  <h3 className="font-bold underline mb-2 text-xs lg:text-[18px] ">
+                    Project Description
+                  </h3>
+                  <li>
+                    Explore detailed information about destinations, crew
+                    members, and space technology
+                  </li>
+
+                  <li>
+                    Toggle tabs to seamlessly switch between categories and
+                    learn more about each topic
+                  </li>
+
+                  <li>
+                    Fully responsive design, optimized for desktop, tablet, and
+                    mobile viewing
+                  </li>
+                  <li>
+                    Hover effects on interactive elements, enhancing user
+                    navigation and engagement
+                  </li>
+                  <li>
+                    Visually engaging layout with smooth transitions and
+                    immersive imagery
+                  </li>
+
+                  <h3 className="font-bold underline mt-5 text-xs lg:text-[18px] mb-2">
+                    Technologies
+                  </h3>
+
+                  <h4>React, TypeScript, Redux, Tailwind</h4>
+                </ul>
+              </div>
+              <div className="flex justify-between p-5 mt-auto">
+                <ProjectSVG
+                  title="Front-end"
+                  pageLink="https://space-tourism-website-main-navy.vercel.app/"
+                  githubLink="https://github.com/dlkokhta/space-tourism-website-main"
+                />
+                <ProjectSVG
+                  title="Front-end"
+                  pageLink="https://space-tourism-website-main-api-2-production.up.railway.app/"
+                  githubLink="https://github.com/dlkokhta/space-tourism-website-main-API-2"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
