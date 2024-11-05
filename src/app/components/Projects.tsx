@@ -111,7 +111,6 @@ const Projects = () => {
               width={500}
               height={500}
               className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
-              // onMouseEnter={() => setEntertainmetApp(true)}
             />
 
             <div className="absolute pt-28 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
@@ -163,25 +162,55 @@ const Projects = () => {
       <div className="flex flex-col items-center ">
         <h2 className="mb-2">Memori game</h2>
         <div className="pb-10 ">
-          <a
-            href="https://memory-game-red-omega.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <div className="relative overflow-hidden group ">
             <Image
               src="/memoryGame.png"
               alt="Memory game app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
+              className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
             />
-          </a>
-          <div className="flex justify-between">
-            <ProjectSVG
-              title="Front-end"
-              pageLink="https://memory-game-red-omega.vercel.app/"
-              githubLink="https://github.com/dlkokhta/EcommerceFrontEnd"
-            />
+
+            <div className="absolute pt-28 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
+              <div className="relative cursor-pointer">
+                <ul className="text-xs lg:text-[13px] list-disc pl-6 font-normal max-h-40 overflow-y-auto md:max-h-full ">
+                  <h3 className="font-bold underline mb-2 text-xs lg:text-[18px] ">
+                    Project Description
+                  </h3>
+                  <li>Choose to play solo or with up to 4 players</li>
+
+                  <li>
+                    Select between number or icon themes for the game tiles
+                  </li>
+                  <li>
+                    Choose from two grid sizes: 4x4 for a quick game or 6x6 for
+                    more challenge
+                  </li>
+                  <li>
+                    Optimized layouts for different screen sizes, ensuring a
+                    smooth experience on any device
+                  </li>
+                  <li>
+                    Interactive elements feature hover effects for a dynamic
+                    user interface
+                  </li>
+
+                  <h3 className="font-bold underline mt-2 text-xs lg:text-[18px] mb-2">
+                    Technologies
+                  </h3>
+
+                  <h4>React, TypeScript, Redux, Tailwind</h4>
+                </ul>
+              </div>
+
+              <div className="flex justify-between p-5 mt-auto">
+                <ProjectSVG
+                  title="Front-end"
+                  pageLink="https://memory-game-red-omega.vercel.app/"
+                  githubLink="https://github.com/dlkokhta/EcommerceFrontEnd"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
