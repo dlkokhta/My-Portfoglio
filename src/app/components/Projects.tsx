@@ -1,11 +1,14 @@
 "use client";
 import ProjectSVG from "../components/ProjectSVG";
 import Image from "next/image";
+import { useState } from "react";
 
 const Projects = () => {
+  const [entertainmetApp, setEntertainmetApp] = useState(false);
   return (
     <div className="mt-20 text-white">
       <h1 className="text-xl font-bold mb-5 text-center">Projects</h1>
+
       <div className="flex flex-col items-center">
         <h2 className="mb-2">E-commerce</h2>
         <div className="pb-10 ">
@@ -60,7 +63,7 @@ const Projects = () => {
                   </h3>
                   <h4>
                     React, TypeScript, Redux, Node.js, Express, MongoDB, Yup,
-                    Joi, Nodemailer
+                    Joi, Nodemailer, Tailwind
                   </h4>
                 </ul>
 
@@ -100,31 +103,59 @@ const Projects = () => {
 
       <div className="flex flex-col items-center ">
         <h2 className="mb-2">entertainment-web-app</h2>
-        <div className="pb-10 ">
-          <a
-            href="https://entertainment-web-app-frontend-wine.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <div className="pb-10">
+          <div className="relative overflow-hidden group ">
             <Image
               src="/entertainment-web-app.png"
               alt="Entertainment-web-app image"
               width={500}
               height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
+              className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
+              // onMouseEnter={() => setEntertainmetApp(true)}
             />
-          </a>
-          <div className="flex justify-between">
-            <ProjectSVG
-              title="Front-end"
-              pageLink="https://entertainment-web-app-frontend-wine.vercel.app/"
-              githubLink="https://github.com/dlkokhta/entertainment-web-app-frontend/"
-            />
-            <ProjectSVG
-              title="Back-end"
-              pageLink="https://entertainment-web-app-api-production-4cd8.up.railway.app/"
-              githubLink="https://github.com/dlkokhta/entertainment-web-app-API"
-            />
+
+            <div className="absolute pt-28 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
+              <div className="relative cursor-pointer">
+                <ul className="text-xs lg:text-[13px] list-disc pl-6 font-normal max-h-40 overflow-y-auto md:max-h-full ">
+                  <h3 className="font-bold underline mb-2 text-xs lg:text-[18px] ">
+                    Project Description
+                  </h3>
+                  <li>User registration</li>
+
+                  <li>Filter options by movie name, move and TV series</li>
+                  <li>
+                    Bookmarking feature for saving favorite movies and TV series
+                  </li>
+                  <li>
+                    Error handling with clear messages during registration and
+                    login
+                  </li>
+                  <li>Responsive interface for an enhanced user experience</li>
+
+                  <h3 className="font-bold underline mt-2 text-xs lg:text-[18px] mb-2">
+                    Technologies
+                  </h3>
+
+                  <h4>
+                    React, TypeScript, Redux, Node.js, Express, MongoDB, Yup,
+                    Joi, Tailwind
+                  </h4>
+                </ul>
+              </div>
+
+              <div className="flex justify-between w-full p-5 mt-auto">
+                <ProjectSVG
+                  title="Front-end"
+                  pageLink="https://entertainment-web-app-frontend-wine.vercel.app/"
+                  githubLink="https://github.com/dlkokhta/entertainment-web-app-frontend/"
+                />
+                <ProjectSVG
+                  title="Back-end"
+                  pageLink="https://entertainment-web-app-api-production-4cd8.up.railway.app/"
+                  githubLink="https://github.com/dlkokhta/entertainment-web-app-API"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

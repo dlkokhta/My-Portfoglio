@@ -58,7 +58,7 @@ const Menu = () => {
         rel="noopener noreferrer"
         className="bg-cyan-300 text-center rounded-md lg:mt-5 w-20"
       >
-        <div className="border px-2 py-1 rounded-md border-cyan-300  bg-black cursor-pointer duration-400 transition hover:-translate-y-1 hover:-translate-x-1">
+        <div className="border px-2 py-1 rounded-md border-cyan-300  bg-black cursor-pointer duration-500 transition hover:-translate-y-1 hover:-translate-x-1">
           Resume
         </div>
       </a>
