@@ -260,7 +260,7 @@ const Projects = () => {
                     Technologies
                   </h3>
 
-                  <h4>React, TypeScript, Redux, Tailwind</h4>
+                  <h4>React, TypeScript, Tailwind, Express, MongoDB</h4>
                 </ul>
               </div>
               <div className="flex justify-between p-5 mt-auto">
