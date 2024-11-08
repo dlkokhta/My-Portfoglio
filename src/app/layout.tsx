@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import Head from "next/head";
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700"],
@@ -21,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <body className={roboto.className}>
         <div className="lg:hidden">
           <Header />

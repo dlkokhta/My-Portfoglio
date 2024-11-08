@@ -92,7 +92,7 @@ const Projects = () => {
                 />
                 <ProjectSVG
                   title="Back-end"
-                  pageLink="https://ecommerceapi-production-7d9c.up.railway.app/"
+                  pageLink="https://dimitrikokhtashvili.site/"
                   githubLink="https://github.com/dlkokhta/EcommerceAPI"
                 />
               </div>
