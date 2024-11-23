@@ -20,7 +20,7 @@ const Projects = () => {
               height={500}
               className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
             />
-            <div className="absolute pt-5 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
+            <div className="absolute pt-3 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
               <div className="relative cursor-pointer">
                 <ul
                   style={{
@@ -72,7 +72,20 @@ const Projects = () => {
                     className="w-4 h-4 text-gray-400"
                     fill="none"
                     stroke="currentColor"
-                    viewBox="0 0 24 24"
+                    viewBox="0 0 25 10"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                  <svg
+                    className="w-4 h-4 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 25"
                   >
                     <path
                       strokeLinecap="round"
@@ -113,7 +126,7 @@ const Projects = () => {
               className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
             />
 
-            <div className="absolute pt-28 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
+            <div className="absolute pt-3 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
               <div className="relative cursor-pointer">
                 <ul className="text-xs lg:text-[13px] list-disc pl-6 font-normal max-h-40 overflow-y-auto md:max-h-full ">
                   <h3 className="font-bold underline mb-2 text-xs lg:text-[18px] ">
@@ -171,7 +184,7 @@ const Projects = () => {
               className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
             />
 
-            <div className="absolute pt-28 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
+            <div className="absolute pt-3 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
               <div className="relative cursor-pointer">
                 <ul className="text-xs lg:text-[13px] list-disc pl-6 font-normal max-h-40 overflow-y-auto md:max-h-full ">
                   <h3 className="font-bold underline mb-2 text-xs lg:text-[18px] ">
@@ -227,7 +240,7 @@ const Projects = () => {
               className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
             />
 
-            <div className="absolute pt-10 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
+            <div className="absolute pt-2 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
               <div className="relative cursor-pointer">
                 <ul className="text-xs lg:text-[13px] list-disc pl-6 font-normal max-h-40 overflow-y-auto md:max-h-full ">
                   <h3 className="font-bold underline mb-2 text-xs lg:text-[18px] ">
@@ -292,7 +305,7 @@ const Projects = () => {
               className="object-cover filter grayscale transition-transform duration-700 cursor-pointer transform group-hover:filter-none group-hover:scale-105"
             />
 
-            <div className="absolute pt-20 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
+            <div className="absolute pt-4 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">
               <div className="relative">
                 <ul className="text-xs lg:text-[13px] list-disc pl-6 font-normal max-h-40 overflow-y-auto md:max-h-full ">
                   <h3 className="font-bold underline mb-2 text-xs lg:text-[18px] ">

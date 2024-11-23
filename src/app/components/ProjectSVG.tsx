@@ -6,7 +6,7 @@ interface SvgTypes {
 
 const ProjectSVG: React.FC<SvgTypes> = ({ pageLink, githubLink, title }) => {
   return (
-    <div className="flex items-center gap-3 mt-2">
+    <div className="flex items-center gap-2 mt-2">
       <h3 className="text-sm text-white">{title}</h3>
       <a href={pageLink} target="_blank" rel="noopener noreferrer">
         <svg
@@ -26,8 +26,8 @@ const ProjectSVG: React.FC<SvgTypes> = ({ pageLink, githubLink, title }) => {
         <svg
           className="hover:fill-[#64ffda]"
           fill="#ffffff"
-          width="20px"
-          height="20px"
+          width="19px"
+          height="19px"
           viewBox="0 0 1920 1920"
           xmlns="http://www.w3.org/2000/svg"
         >
