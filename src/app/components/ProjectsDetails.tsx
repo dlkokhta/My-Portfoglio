@@ -54,7 +54,7 @@ const ProjectsDetails: React.FC<ProjectsDetailsProps> = ({
                 ))}
                 {/* <p>{projectTechnologies.join(", ")}</p> */}
               </ul>
-              <div className="absolute  left-1/2 transform -translate-x-1/2 animate-bounce md:hidden">
+              <div className="absolute left-1/2 transform -translate-x-1/2 animate-bounce sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden 4xl:hidden">
                 <svg
                   className="w-4 h-4 text-gray-400"
                   fill="none"
