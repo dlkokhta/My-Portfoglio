@@ -138,7 +138,7 @@ const Projects = () => {
         ]}
       />
 
-      <div className="flex flex-col items-center ">
+      {/* <div className="flex flex-col items-center ">
         <h2 className="mb-2">todo-app</h2>
         <div className="pb-10 ">
           <a
@@ -162,33 +162,27 @@ const Projects = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col items-center ">
-        <h2 className="mb-2">devjobs-web-app</h2>
-        <div className="pb-10 ">
-          <a
-            href="https://devjobs-web-app-three.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/devjobs-web-app.png"
-              alt="devjobs-web-app image"
-              width={500}
-              height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
-            />
-          </a>
-          <div className="flex justify-between">
-            <ProjectSVG
-              title="Front-end"
-              pageLink="https://devjobs-web-app-three.vercel.app/"
-              githubLink="https://github.com/dlkokhta/devjobs-web-app"
-            />
-          </div>
-        </div>
-      </div>
+      <ProjectsDetails
+        projectName="devjobs-web-app"
+        projectImage="/devjobs-web-app.png"
+        projectDescription={[
+          "Allows users to search for jobs using filters like title, company, and location.",
+          "Displays job postings with details such as company name, role, location, and job type (e.g., full-time, part-time, remote).",
+          "Includes a toggle feature for switching between light and dark themes for better user experience across various lighting conditions.",
+          "Provides comprehensive information for each job posting, including job requirements, company description, and application instructions.",
+          " Ensures seamless user experience across devices, including mobile, tablet, and desktop",
+        ]}
+        projectTechnologies={["  React, Tailwind"]}
+        projectSVGs={[
+          {
+            title: "Front-end",
+            pageLink: "https://devjobs-web-app-three.vercel.app/",
+            githubLink: "https://github.com/dlkokhta/devjobs-web-app",
+          },
+        ]}
+      />
 
       <ProjectsDetails
         projectName="dictionary-web-app"
