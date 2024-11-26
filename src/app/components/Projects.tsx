@@ -1,11 +1,7 @@
 "use client";
-import ProjectSVG from "../components/ProjectSVG";
-import Image from "next/image";
-// import { useState } from "react";
 import ProjectsDetails from "../components/ProjectsDetails";
 
 const Projects = () => {
-  // const [entertainmetApp, setEntertainmetApp] = useState(false);
   return (
     <div className="mt-20 text-white">
       <h1 className="text-xl font-bold mb-5 text-center">Projects</h1>
@@ -137,32 +133,6 @@ const Projects = () => {
           },
         ]}
       />
-
-      {/* <div className="flex flex-col items-center ">
-        <h2 className="mb-2">todo-app</h2>
-        <div className="pb-10 ">
-          <a
-            href="https://todo-app-sigma-beryl.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/todo-app.png"
-              alt="todo-app image"
-              width={500}
-              height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
-            />
-          </a>
-          <div className="flex justify-between">
-            <ProjectSVG
-              title="Front-end"
-              pageLink="https://todo-app-sigma-beryl.vercel.app/"
-              githubLink="https://github.com/dlkokhta/todo-app"
-            />
-          </div>
-        </div>
-      </div> */}
 
       <ProjectsDetails
         projectName="devjobs-web-app"
