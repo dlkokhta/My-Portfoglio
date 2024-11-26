@@ -190,83 +190,51 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center ">
-        <h2 className="mb-2">dictionary-web-app</h2>
-        <div className="pb-10 ">
-          <a
-            href="https://dictionary-web-app-drab.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/dictionary-web-app.png"
-              alt="dictionary-web-app image"
-              width={500}
-              height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
-            />
-          </a>
-          <div className="flex justify-between">
-            <ProjectSVG
-              title="Front-end"
-              pageLink="https://dictionary-web-app-drab.vercel.app/"
-              githubLink="https://github.com/dlkokhta/dictionary-web-app"
-            />
-          </div>
-        </div>
-      </div>
+      <ProjectsDetails
+        projectName="dictionary-web-app"
+        projectImage="/dictionary-web-app.png"
+        projectDescription={[
+          "Allows users to search for words and provides detailed definitions.",
+          " Includes a play button for listening to the correct pronunciation of words.",
+          "Displays synonyms and other word-related details when available.",
+          "Supports font style selection (Sans Serif, Serif, Mono) for a personalized reading experience.",
+          "Enables a dark mode toggle for better usability in low-light environments.",
+          "Displays clear error messages for invalid word entries or server issues",
+          "Optimized layouts for seamless use on devices of various screen sizes.",
+        ]}
+        projectTechnologies={["  React, TypeScript, Tailwind"]}
+        projectSVGs={[
+          {
+            title: "Front-end",
+            pageLink: "https://dictionary-web-app-drab.vercel.app/",
+            githubLink: "https://github.com/dlkokhta/dictionary-web-app",
+          },
+        ]}
+      />
 
-      <div className="flex flex-col items-center ">
-        <h2 className="mb-2">planets-fact-site</h2>
-        <div className="pb-10 ">
-          <a
-            href="https://planets-fact-site-orpin.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/planets-fact-site.png"
-              alt="planets-fact-site image"
-              width={500}
-              height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
-            />
-          </a>
-          <div className="flex justify-between">
-            <ProjectSVG
-              title="Front-end"
-              pageLink="https://planets-fact-site-orpin.vercel.app"
-              githubLink="https://github.com/dlkokhta/planets-fact-site"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="flex flex-col items-center ">
-        <h2 className="mb-2">rest-countries-app</h2>
-        <div className="pb-10 ">
-          <a
-            href="https://rest-countries-api-with-color-theme-switcher-master-smoky.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/rest-countries-app.png"
-              alt="rest-countries-app image"
-              width={500}
-              height={500}
-              className="filter grayscale hover:filter-none transition-all duration-400 cursor-pointer hover:scale-105"
-            />
-          </a>
-          <div className="flex justify-between">
-            <ProjectSVG
-              title="Front-end"
-              pageLink="https://rest-countries-api-with-color-theme-switcher-master-smoky.vercel.app/"
-              githubLink="https://github.com/dlkokhta/rest-countries-api-with-color-theme-switcher-master"
-            />
-          </div>
-        </div>
-      </div>
+      <ProjectsDetails
+        projectName="rest-countries-app"
+        projectImage="/rest-countries-app.png"
+        projectDescription={[
+          "Displays information about countries including population, region, capital, and flag.",
+          "Provides a search functionality to quickly find specific countries by name.",
+          "Includes a dropdown filter to view countries by region (e.g., Asia, Europe).",
+          "Shows detailed information for selected countries, such as native name, subregion, languages, currencies, and border countries.",
+          "Allows navigation to border countries by clicking on them in the detailed view.",
+          "Offers a dark mode.",
+          "Responsive design ensures an optimized experience across various devices.",
+        ]}
+        projectTechnologies={["  React, Tailwind"]}
+        projectSVGs={[
+          {
+            title: "Front-end",
+            pageLink:
+              "https://rest-countries-api-with-color-theme-switcher-master-smoky.vercel.app/",
+            githubLink:
+              "https://github.com/dlkokhta/rest-countries-api-with-color-theme-switcher-master",
+          },
+        ]}
+      />
     </div>
   );
 };

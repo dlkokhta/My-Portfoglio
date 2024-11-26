@@ -68,7 +68,7 @@ const ProjectsDetails: React.FC<ProjectsDetailsProps> = ({
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-                <svg
+                {/* <svg
                   className="w-4 h-4 text-gray-400"
                   fill="none"
                   stroke="currentColor"
@@ -80,7 +80,7 @@ const ProjectsDetails: React.FC<ProjectsDetailsProps> = ({
                     strokeWidth="2"
                     d="M19 9l-7 7-7-7"
                   />
-                </svg>
+                </svg> */}
               </div>
             </div>
 
