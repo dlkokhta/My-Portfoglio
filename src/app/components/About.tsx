@@ -5,7 +5,7 @@ const About = () => {
         <h1 className="text-xl mb-5 font-bold">About Me</h1>
 
         <p>
-          Hello! I&apos;m Dimitri Kokhtashvili, a front-end-focused full-stack
+          I&apos;m Dimitri Kokhtashvili, a front-end-focused full-stack
           developer specializing in React and Next.js. I have a passion for
           building dynamic, responsive user interfaces and have experience
           creating efficient and scalable back-end systems with Express.js. My
