@@ -4,6 +4,7 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Header2 from "../components/Header2";
+import Certificates from "../components/Certificates";
 
 const HomePage = () => {
   return (
@@ -25,6 +26,13 @@ const HomePage = () => {
         <div id="contact" className="section lg:hidden">
           <Contact />
         </div>
+
+        <div id="certificates" className="section">
+        <Certificates/>
+        </div>
+       
+       
+
       </div>
     </main>
   );
