@@ -23,15 +23,15 @@ const HomePage = () => {
         <div id="projects" className="section">
           <Projects />
         </div>
+
+        <div id="certificates" className="section">
+        <Certificates />
+        </div>
+
         <div id="contact" className="section lg:hidden">
           <Contact />
         </div>
 
-        <div id="certificates" className="section">
-        <Certificates/>
-        </div>
-       
-       
 
       </div>
     </main>

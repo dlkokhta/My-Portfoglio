@@ -36,9 +36,21 @@ const Menu = () => {
         duration={500}
         spy={true}
         activeClass="active"
-        className="cursor-pointer "
+        className="cursor-pointer"
       >
         <h1>PROJECTS</h1>
+      </Link>
+
+      
+      <Link
+        to="certificates"
+        smooth={true}
+        duration={500}
+        spy={true}
+        activeClass="active"
+        className="cursor-pointer "
+      >
+        <h1>Certificates</h1>
       </Link>
 
       <Link
@@ -46,11 +58,14 @@ const Menu = () => {
         smooth={true}
         duration={500}
         spy={true}
-        activeClass="contact"
+        activeClass="active"
         className="cursor-pointer lg:hidden"
       >
         <h1>CONTACT</h1>
       </Link>
+
+
+      
 
       <a
         href="/Resume.pdf"

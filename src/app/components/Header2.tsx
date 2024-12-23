@@ -1,6 +1,7 @@
 import Menu from "./Menu";
 import Contact from "./Contact";
 
+
 const Header2 = () => {
   return (
     <div className="text-white hidden lg:block font-light">
