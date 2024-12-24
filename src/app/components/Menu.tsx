@@ -10,20 +10,22 @@ const Menu = () => {
         smooth={true}
         duration={500}
         spy={true}
-        activeClass={`clicked ? "text-gray-400" : ""`}
+        offset={-50}
+        activeClass="text-gray-400"
         className="cursor-pointer"
       >
         <div className="w-full flex items-center">
-          <h1 className="">ABOUT</h1>
+          <h1>ABOUT</h1>
         </div>
       </Link>
-
+     
       <Link
         to="skills"
         smooth={true}
         duration={500}
         spy={true}
-        activeClass="active"
+        offset={-50}
+        activeClass="text-gray-400"
         className="cursor-pointer"
         onClick={() => setClicked(true)}
       >
@@ -35,22 +37,23 @@ const Menu = () => {
         smooth={true}
         duration={500}
         spy={true}
-        activeClass="active"
+        offset={-50}
+        activeClass="text-gray-400"
         className="cursor-pointer"
       >
         <h1>PROJECTS</h1>
       </Link>
 
-      
       <Link
         to="certificates"
         smooth={true}
         duration={500}
         spy={true}
-        activeClass="active"
+        offset={-50}
+        activeClass="text-gray-400"
         className="cursor-pointer "
       >
-        <h1>Certificates</h1>
+        <h1>CERTIFICATES</h1>
       </Link>
 
       <Link
@@ -58,14 +61,12 @@ const Menu = () => {
         smooth={true}
         duration={500}
         spy={true}
-        activeClass="active"
+        offset={-50}
+        activeClass="text-gray-400"
         className="cursor-pointer lg:hidden"
       >
         <h1>CONTACT</h1>
       </Link>
-
-
-      
 
       <a
         href="/Resume.pdf"
