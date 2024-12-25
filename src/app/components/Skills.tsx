@@ -12,6 +12,7 @@ const Skills = () => {
           <SkillsDetails name="Javascript" />
           <SkillsDetails name="TypeScript" />
           <SkillsDetails name="React.js" />
+          <SkillsDetails name="Redux" />
           <SkillsDetails name="Next.js" />
           <SkillsDetails name="Node.js" />
           <SkillsDetails name="Express.js" />
@@ -20,6 +21,7 @@ const Skills = () => {
           <SkillsDetails name="Github" />
           <SkillsDetails name="SQL" />
           <SkillsDetails name="PostgreSQL" />
+          <SkillsDetails name="SQLite" />
           <SkillsDetails name="pgAdmin" />
           <SkillsDetails name="MS SQL" />
           <SkillsDetails name="SQLite" />
@@ -30,7 +32,6 @@ const Skills = () => {
           <SkillsDetails name="MVC" />
           <SkillsDetails name="VMware Virtualization" />
           <SkillsDetails name="VirtualBox" />
-          <SkillsDetails name="Hyper-v" />
           <SkillsDetails name="Docker" />
           <SkillsDetails name="MikroTik" />
           <SkillsDetails name="Cisco Networking" />
@@ -43,5 +44,6 @@ const Skills = () => {
     </>
   );
 };
+          
 
 export default Skills;
