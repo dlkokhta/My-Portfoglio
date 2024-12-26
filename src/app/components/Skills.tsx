@@ -16,6 +16,8 @@ const Skills = () => {
           <SkillsDetails name="Next.js" />
           <SkillsDetails name="Node.js" />
           <SkillsDetails name="Express.js" />
+          <SkillsDetails name="Tailwind" />
+          <SkillsDetails name="Bootstrap" />
           <SkillsDetails name="Mongo DB" />
           <SkillsDetails name="Git" />
           <SkillsDetails name="Github" />
