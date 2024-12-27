@@ -26,6 +26,18 @@ const Certificates = () => {
           />
         </a>
       </div>
+
+      <div className="mt-10">
+        <p className="mb-3">Coursera: Meta Introduction to Front-End Development</p>
+        <a href="https://coursera.org/share/c9cea21d40226d08f8bdc8a884322a65">
+          <Image
+            src="/frontEnd.jpeg"
+            alt="linkedin icon"
+            width={500}
+            height={500}
+          />
+        </a>
+      </div>
     </div>
   );
 };
