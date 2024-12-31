@@ -81,7 +81,7 @@ const Projects = () => {
         projectSVGs={[
           {
             title: "Front-end",
-            pageLink: "https://dlkokhta.github.io/memory-game/",
+            pageLink: "https://memory-game-dimitri-kokhtashvili.vercel.app/",
             githubLink: "https://github.com/dlkokhta/memory-game",
           },
         ]}
