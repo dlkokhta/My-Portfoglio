@@ -128,7 +128,7 @@ const Projects = () => {
         projectSVGs={[
           {
             title: "Front-end",
-            pageLink: "https://password-generator-nine-lake.vercel.app/",
+            pageLink: "https://dlkokhta.github.io/Password-Generator/",
             githubLink: "https://github.com/dlkokhta/Password-Generator",
           },
         ]}
