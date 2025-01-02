@@ -199,6 +199,31 @@ const Projects = () => {
           },
         ]}
       />
+
+
+<ProjectsDetails
+        projectName="rest-countries-app"
+        projectImage="/rest-countries-app.png"
+        projectDescription={[
+          // "Displays information about countries including population, region, capital, and flag.",
+          // "Provides a search functionality to quickly find specific countries by name.",
+          // "Includes a dropdown filter to view countries by region (e.g., Asia, Europe).",
+          // "Shows detailed information for selected countries, such as native name, subregion, languages, currencies, and border countries.",
+          // "Allows navigation to border countries by clicking on them in the detailed view.",
+          // "Offers a dark mode.",
+          // "Responsive design ensures an optimized experience across various devices.",
+        ]}
+        projectTechnologies={["React, Tailwind"]}
+        projectSVGs={[
+          {
+            title: "Front-end",
+            pageLink:
+              "https://art-gallery-dusky-xi.vercel.app/index.html",
+            githubLink:
+              "https://github.com/dlkokhta/rest-countries-api-with-color-theme-switcher-master",
+          },
+        ]}
+      />
     </div>
   );
 };
