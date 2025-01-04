@@ -224,8 +224,12 @@ const Projects = () => {
           },
         ]}
       />
+       <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-10"></div>
     </div>
+    
   );
+
+  
 };
 
 export default Projects;
