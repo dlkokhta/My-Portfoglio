@@ -26,7 +26,12 @@ const Menu = () => {
         }`}
         
       >
-        <div className="w-full flex items-center">
+         <div className="flex items-center gap-5">
+         <div
+      className={`h-0.5 w-10 transition-colors duration-300 ${
+        activeLink === "about" ? "bg-gray-400 w-24" : "bg-white"
+      }`}
+    ></div>
           <h1>ABOUT</h1>
         </div>
       </Link>
@@ -43,7 +48,14 @@ const Menu = () => {
         }`}
        
       >
+         <div className="flex items-center gap-5">
+         <div
+      className={`h-0.5 w-10 transition-colors duration-300 ${
+        activeLink === "skills" ? "bg-gray-400 w-24" : "bg-white"
+      }`}
+    ></div>
         <h1>SKILLS</h1>
+        </div>
       </Link>
 
       <Link
@@ -58,7 +70,16 @@ const Menu = () => {
           activeLink === "projects" ? "text-gray-400" : ""
         }`}
       >
+         <div className="flex items-center gap-5">
+         <div
+      className={`h-0.5 w-10 transition-colors duration-300 ${
+        activeLink === "projects" ? "bg-gray-400 w-24" : "bg-white"
+      }`}
+    ></div>
+    
         <h1>PROJECTS</h1>
+       
+        </div>
       </Link>
 
       <Link
@@ -73,7 +94,16 @@ const Menu = () => {
           activeLink === "certificates" ? "text-gray-400" : ""
         }`}
       >
+        <div className="flex items-center gap-5">
+        <div
+      className={`h-0.5 w-10 transition-colors duration-300 ${
+        activeLink === "certificates" ? "bg-gray-400 w-24" : "bg-white"
+      }`}
+    ></div>
         <h1>CERTIFICATES</h1>
+      
+        </div>
+       
       </Link>
 
       <Link
