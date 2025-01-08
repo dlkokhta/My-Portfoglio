@@ -28,7 +28,7 @@ const Menu = () => {
       >
          <div className="flex items-center gap-5">
          <div
-      className={`h-0.5 w-10 transition-colors duration-300 ${
+      className={`h-0.5 w-10 transition-colors duration-700 ${
         activeLink === "about" ? "bg-gray-400 w-24" : "bg-white"
       }`}
     ></div>
@@ -43,14 +43,14 @@ const Menu = () => {
         spy={true}
         onSetActive={handleSetActive}
         onClick={() => handleClick("skills")}
-        className={`cursor-pointer ${
+        className={`cursor-pointer transition-colors duration-700 ${
           activeLink === "skills" ? "text-gray-400" : ""
         }`}
        
       >
          <div className="flex items-center gap-5">
          <div
-      className={`h-0.5 w-10 transition-colors duration-300 ${
+      className={`h-0.5 w-10 transition-colors duration-700 ${
         activeLink === "skills" ? "bg-gray-400 w-24" : "bg-white"
       }`}
     ></div>

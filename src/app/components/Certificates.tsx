@@ -38,6 +38,19 @@ const Certificates = () => {
           />
         </a>
       </div>
+
+      
+      <div className="mt-10">
+        <p className="mb-3">Coursera: Meta Programming with JavaScript</p>
+        <a href="https://coursera.org/share/00207c44b3ada02ab54aeccdfa1ef360">
+          <Image
+            src=""
+            alt="linkedin icon"
+            width={500}
+            height={500}
+          />
+        </a>
+      </div>
     </div>
   );
 };
