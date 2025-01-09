@@ -26,10 +26,10 @@ const Menu = () => {
         }`}
         
       >
-         <div className="flex items-center gap-5">
+         <div className="flex items-center gap-5 group">
          <div
       className={`h-0.5 w-10 transition-colors duration-700 ${
-        activeLink === "about" ? "bg-gray-400 w-24" : "bg-white"
+        activeLink === "about"  ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
           <h1>ABOUT</h1>
@@ -48,10 +48,10 @@ const Menu = () => {
         }`}
        
       >
-         <div className="flex items-center gap-5">
+         <div className="flex items-center gap-5 group">
          <div
       className={`h-0.5 w-10 transition-colors duration-700 ${
-        activeLink === "skills" ? "bg-gray-400 w-24" : "bg-white"
+        activeLink === "skills" ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
         <h1>SKILLS</h1>
@@ -70,10 +70,10 @@ const Menu = () => {
           activeLink === "projects" ? "text-gray-400" : ""
         }`}
       >
-         <div className="flex items-center gap-5">
+         <div className="flex items-center gap-5 group">
          <div
       className={`h-0.5 w-10 transition-colors duration-300 ${
-        activeLink === "projects" ? "bg-gray-400 w-24" : "bg-white"
+        activeLink === "projects" ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
     
@@ -94,10 +94,10 @@ const Menu = () => {
           activeLink === "certificates" ? "text-gray-400" : ""
         }`}
       >
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5 group">
         <div
       className={`h-0.5 w-10 transition-colors duration-300 ${
-        activeLink === "certificates" ? "bg-gray-400 w-24" : "bg-white"
+        activeLink === "certificates"  ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
         <h1>CERTIFICATES</h1>
@@ -115,7 +115,7 @@ const Menu = () => {
         onSetActive={handleSetActive}
         onClick={() => handleClick("contact")}
         className={`cursor-pointer lg:hidden ${
-          activeLink === "contact" ? "text-gray-400" : ""
+          activeLink  === "contact" ? "text-gray-400" : ""
         }`}
       >
         <h1>CONTACT</h1>
