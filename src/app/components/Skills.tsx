@@ -12,12 +12,16 @@ const Skills = () => {
           <SkillsDetails name="Javascript" />
           <SkillsDetails name="TypeScript" />
           <SkillsDetails name="React.js" />
+          <SkillsDetails name="React Hooks" />
           <SkillsDetails name="Redux" />
           <SkillsDetails name="Next.js" />
           <SkillsDetails name="Node.js" />
           <SkillsDetails name="Express.js" />
           <SkillsDetails name="Tailwind" />
           <SkillsDetails name="Bootstrap" />
+          <SkillsDetails name="Rest API" />
+          <SkillsDetails name="Joi" />
+          <SkillsDetails name="Yup" />
           <SkillsDetails name="Mongo DB" />
           <SkillsDetails name="Git" />
           <SkillsDetails name="Github" />
