@@ -10,10 +10,19 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Dimitri Kokhtashvili| Full-Stack Developer | React/Next/Express.js",
-  description:
-    "Experienced Full-Stack Developer skilled in React, Node.js, and MongoDB, building dynamic and responsive web applications.",
+  title: "Dimitri Kokhtashvili | Full-Stack Developer | React, Next.js, Express.js Expert",
+  description: "Full-Stack Developer skilled in React, Next.js, and MongoDB, creating responsive web apps.",
+  robots: "index, follow",
+  keywords: "Full-Stack Developer, React, Next.js, MongoDB, Express.js, Web Development",
+  openGraph: {
+    title: "Dimitri Kokhtashvili | Full-Stack Developer",
+    description: "Skilled developer in React, Node.js, MongoDB. Creating scalable, responsive web applications.",
+    url: "https://www.dimitrikokhtashvili.com",
+    images: ["image_url"],
+  },
+  
 };
+
 
 export default function RootLayout({
   children,
