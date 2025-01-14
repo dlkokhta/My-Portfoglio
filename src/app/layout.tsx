@@ -16,9 +16,12 @@ export const metadata: Metadata = {
   keywords: "Full-Stack Developer, React, Next.js, MongoDB, Express.js, Web Development",
   openGraph: {
     title: "Dimitri Kokhtashvili | Full-Stack Developer",
-    description: "Skilled developer in React, Node.js, MongoDB. Creating scalable, responsive web applications.",
-    url: "https://www.dimitrikokhtashvili.com",
+    type: "website",
     images: ["https://www.dimitrikokhtashvili.dev/myPhoto.png"],
+    url: "https://www.dimitrikokhtashvili.com",
+    description: "Skilled developer in React, Node.js, MongoDB. Creating scalable, responsive web applications.",
+    locale:"en_US",
+    siteName:"Dimitri Kokhtashvili"
   },
   // twitter: {
   //   card: "summary_large_image",
