@@ -18,9 +18,14 @@ export const metadata: Metadata = {
     title: "Dimitri Kokhtashvili | Full-Stack Developer",
     description: "Skilled developer in React, Node.js, MongoDB. Creating scalable, responsive web applications.",
     url: "https://www.dimitrikokhtashvili.com",
-    images: ["image_url"],
+    images: ["https://www.dimitrikokhtashvili.dev/myPhoto.png"],
   },
-  
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Dimitri Kokhtashvili - Portfolio",
+  //   description: "Explore Dimitri's full-stack development projects and skills.",
+  //   image: "https://www.dimitrikokhtashvili.dev/myPhoto.png",
+  // },
 };
 
 
