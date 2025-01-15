@@ -21,8 +21,12 @@ export const metadata: Metadata = {
     url: "https://www.dimitrikokhtashvili.com",
     description: "Skilled developer in React, Node.js, MongoDB. Creating scalable, responsive web applications.",
     locale:"en_US",
-    siteName:"Dimitri Kokhtashvili"
+    siteName:"Dimitri Kokhtashvili",
+    
+    
   },
+  viewport: "width=device-width, initial-scale=1.0",
+ authors: [{ name: "Dimitri Kokhtashvili", url: "https://www.dimitrikokhtashvili.com" }],
   // twitter: {
   //   card: "summary_large_image",
   //   title: "Dimitri Kokhtashvili - Portfolio",
