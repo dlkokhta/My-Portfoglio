@@ -18,7 +18,7 @@ const Menu = () => {
         smooth={true}
         duration={500}
         spy={true}
-        offset={-100} // Adjust offset to trigger active state sooner
+        offset={-100} 
         onSetActive={handleSetActive}
         onClick={() => handleClick("about")}
         className={`cursor-pointer ${
