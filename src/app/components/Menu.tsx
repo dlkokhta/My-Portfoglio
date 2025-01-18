@@ -28,7 +28,7 @@ const Menu = () => {
       >
          <div className="flex items-center gap-5 group">
          <div
-      className={`h-0.5 w-10 transition-all duration-500 ${
+      className={`h-0.5 w-10 transition-all duration-500 hidden lg:block ${
         activeLink === "about"  ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
@@ -50,7 +50,7 @@ const Menu = () => {
       >
          <div className="flex items-center gap-5 group">
          <div
-      className={`h-0.5 w-10 transition-all duration-500 ${
+      className={`h-0.5 w-10 transition-all duration-500 hidden lg:block ${
         activeLink === "skills" ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
@@ -72,7 +72,7 @@ const Menu = () => {
       >
          <div className="flex items-center gap-5 group">
          <div
-      className={`h-0.5 w-10 transition-all duration-500 ${
+      className={`h-0.5 w-10 transition-all duration-500 hidden lg:block ${
         activeLink === "projects" ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
@@ -96,7 +96,7 @@ const Menu = () => {
       >
         <div className="flex items-center gap-5 group">
         <div
-      className={`h-0.5 w-10 transition-all duration-500 ${
+      className={`h-0.5 w-10 transition-all duration-500 hidden lg:block ${
         activeLink === "certificates"  ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
