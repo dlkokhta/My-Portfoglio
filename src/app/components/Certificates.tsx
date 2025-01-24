@@ -51,6 +51,18 @@ const Certificates = () => {
           />
         </a>
       </div>
+
+      <div className="mt-10">
+        <p className="mb-3">Coursera: Meta Version Control</p>
+        <a href="">
+          <Image
+            src=""
+            alt="linkedin icon"
+            width={500}
+            height={500}
+          />
+        </a>
+      </div>
     </div>
   );
 };
