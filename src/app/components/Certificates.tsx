@@ -8,7 +8,7 @@ const Certificates = () => {
         <a href="https://coursera.org/share/30bb79982bd04bec62b5322461fdbb4a">
           <Image
             src="/advancedReact.jpeg"
-            alt="linkedin icon"
+            alt="advancedReact certificate icon"
             width={500}
             height={500}
           />
@@ -20,7 +20,7 @@ const Certificates = () => {
         <a href="https://coursera.org/share/8fd016b332423bbe513a5f07272cc82c">
           <Image
             src="/IBMReact.jpeg"
-            alt="linkedin icon"
+            alt="IBMReact certificate icon"
             width={500}
             height={500}
           />
@@ -32,7 +32,7 @@ const Certificates = () => {
         <a href="https://coursera.org/share/c9cea21d40226d08f8bdc8a884322a65">
           <Image
             src="/frontEnd.jpeg"
-            alt="linkedin icon"
+            alt="frontEnd certificate icon"
             width={500}
             height={500}
           />
@@ -45,7 +45,7 @@ const Certificates = () => {
         <a href="https://coursera.org/share/00207c44b3ada02ab54aeccdfa1ef360">
           <Image
             src="/javascript.jpeg"
-            alt="linkedin icon"
+            alt="javascript certificate icon"
             width={500}
             height={500}
           />
@@ -54,10 +54,10 @@ const Certificates = () => {
 
       <div className="mt-10">
         <p className="mb-3">Coursera: Meta Version Control</p>
-        <a href="">
+        <a href="https://www.coursera.org/account/accomplishments/verify/W1DIDWB8M5W8">
           <Image
-            src=""
-            alt="linkedin icon"
+            src="/versionControl.jpeg"
+            alt="versionControl certificate icon"
             width={500}
             height={500}
           />
