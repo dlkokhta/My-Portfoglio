@@ -68,7 +68,7 @@ const Certificates = () => {
         <p className="mb-3">Coursera: Meta HTML and CSS in depth</p>
         <a href="https://www.coursera.org/account/accomplishments/verify/77ZYO0F8A3Z8">
           <Image
-            src=""
+            src="/HtmlCssInDepth.jpeg"
             alt="versionControl certificate icon"
             width={500}
             height={500}
