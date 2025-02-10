@@ -201,6 +201,29 @@ const Projects = () => {
       />
 
 
+
+<ProjectsDetails
+        projectName="todo-list-app"
+        projectImage=""
+        projectDescription={[
+          
+        ]}
+        projectTechnologies={[
+          " React, TypeScript, Redux, Node.js, Express, MongoDB, Yup, Joi, Tailwind",
+        ]}
+        projectSVGs={[
+          {
+            title: "Front-end",
+            pageLink: "https://to-do-list-app-dimitrikokhtashvili.vercel.app/",
+            githubLink:
+              "https://github.com/dlkokhta/To-Do-List-App",
+          },
+
+          
+        ]}
+      />
+
+
        <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-10"></div>
     </div>
     
