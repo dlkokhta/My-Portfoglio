@@ -75,6 +75,19 @@ const Certificates = () => {
           />
         </a>
       </div>
+
+
+      <div className="mt-10">
+        <p className="mb-3">Coursera: Meta React basics</p>
+        <a href="https://www.coursera.org/account/accomplishments/verify/77ZYO0F8A3Z8">
+          <Image
+            src="/HtmlCssInDepth.jpeg"
+            alt="versionControl certificate icon"
+            width={500}
+            height={500}
+          />
+        </a>
+      </div>
     </div>
   );
 };
