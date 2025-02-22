@@ -204,12 +204,12 @@ const Projects = () => {
 
 <ProjectsDetails
         projectName="todo-list-app"
-        projectImage=""
+        projectImage="/todo-list.png"
         projectDescription={[
           
         ]}
         projectTechnologies={[
-          " React, TypeScript, Redux, Node.js, Express, MongoDB, Yup, Joi, Tailwind",
+          " React, TypeScript, Redux, Node.js, Express, SQLite, Yup, Joi, Tailwind",
         ]}
         projectSVGs={[
           {
