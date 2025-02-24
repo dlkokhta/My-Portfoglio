@@ -206,6 +206,10 @@ const Projects = () => {
         projectName="todo-list-app"
         projectImage="/todo-list.png"
         projectDescription={[
+          "Add, Edit, and Delete Todos – Easily manage your tasks with a simple and intuitive interface.",
+          "Mark as Completed – Clicking 'Completed' moves the todo to the history view, replacing the normal todo list with completed tasks.",
+          "Search Functionality – Quickly find specific tasks using a search bar that filters todos by name.",
+          "State Management – Redux Toolkit handles global state management for efficient updates and reactivity."
           
         ]}
         projectTechnologies={[
@@ -221,7 +225,7 @@ const Projects = () => {
 
           {
             title: "Back-end",
-            pageLink: "to-do-app.dimitrikokhtashvili.site",
+            pageLink: "https://to-do-app.dimitrikokhtashvili.site/",
             githubLink: "https://github.com/dlkokhta/To-Do-List-App-API",
           },
         ]}
