@@ -6,6 +6,7 @@ const Projects = () => {
     <div className="mt-20 text-white">
       <h1 className="text-xl font-bold mb-5 text-center">Projects</h1>
 
+
       <ProjectsDetails
         projectName="E-commerce"
         projectImage="/Ecommerce.png"
@@ -227,6 +228,30 @@ const Projects = () => {
             title: "Back-end",
             pageLink: "https://to-do-app.dimitrikokhtashvili.site/",
             githubLink: "https://github.com/dlkokhta/To-Do-List-App-API",
+          },
+        ]}
+      />
+
+
+<ProjectsDetails
+        projectName=""
+        projectImage=""
+        projectDescription={[
+         
+        ]}
+        projectTechnologies={[
+          
+        ]}
+        projectSVGs={[
+          {
+            title: "Front-end",
+            pageLink: "",
+            githubLink: "",
+          },
+          {
+            title: "Back-end",
+            pageLink: "",
+            githubLink: "",
           },
         ]}
       />
