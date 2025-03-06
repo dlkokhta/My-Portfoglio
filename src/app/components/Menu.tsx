@@ -122,7 +122,7 @@ const Menu = () => {
       </Link>
 
       <a
-        href="Dimitri Kokhtashvili.pdf"
+        href="Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 text-center rounded-md lg:mt-5 w-20"
