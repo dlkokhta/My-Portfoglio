@@ -123,7 +123,7 @@ const Menu = () => {
 
       <a
         href="Resume.pdf"
-        target="_blank"
+        download
         rel="noopener noreferrer"
         className="bg-green-500 text-center rounded-md lg:mt-5 w-20"
       >
