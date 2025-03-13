@@ -88,6 +88,19 @@ const Certificates = () => {
           />
         </a>
       </div>
+
+
+      <div className="mt-10">
+        <p className="mb-3">Coursera: Meta Principles of UX/UI Design</p>
+        <a href="https://www.coursera.org/account/accomplishments/verify/CLN8UTKX637U">
+          <Image
+            src=""
+            alt="Principles of UX/UI Design"
+            width={500}
+            height={500}
+          />
+        </a>
+      </div>
     </div>
   );
 };
