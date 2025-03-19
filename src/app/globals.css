@@ -58,6 +58,21 @@
     background-color: cyan;
     
   }
+
+  /*page loading animation*/
+ 
+  @keyframes line-grow {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .animate-line-grow {
+    animation: line-grow 2s linear forwards;
+  }
   
 
   /* * {

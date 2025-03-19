@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import { use, useState } from "react";
 
 const Menu = () => {
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("about");
 
   const handleSetActive = (to:any) => {
     setActiveLink(to);
