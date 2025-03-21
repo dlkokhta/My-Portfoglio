@@ -9,8 +9,8 @@
    */
   body {
     /* overflow-x: hidden; */
-    /* width: 100%;
-    min-height: 100vh; */
+    width: 100%; 
+    min-height: 100vh;  
     background-color: #0a192f;
     
   }
@@ -74,7 +74,7 @@
     animation: line-grow 2s linear forwards;
   }
   
-
-  /* * {
+/* 
+  * {
     outline: 1px solid red;
   } */

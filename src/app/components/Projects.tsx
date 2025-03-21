@@ -233,7 +233,7 @@ const Projects = () => {
       />
 
 
-<ProjectsDetails
+{/* <ProjectsDetails
         projectName=""
         projectImage=""
         projectDescription={[
@@ -254,7 +254,7 @@ const Projects = () => {
             githubLink: "",
           },
         ]}
-      />
+      /> */}
 
 
        <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-10"></div>

@@ -6,7 +6,7 @@ interface SvgTypes {
 
 const ProjectSVG: React.FC<SvgTypes> = ({ pageLink, githubLink, title }) => {
   return (
-    <div className="flex items-center gap-2 mt-2">
+    <div className=" flex items-center gap-2 mt-2">
       <h3 className="text-sm text-white">{title}</h3>
       <a href={pageLink} target="_blank" rel="noopener noreferrer">
         <svg
