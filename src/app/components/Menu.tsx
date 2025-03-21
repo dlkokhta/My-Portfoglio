@@ -32,7 +32,7 @@ const Menu = () => {
         activeLink === "about"  ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
-          <h1>ABOUT</h1>
+          <h1 className="text-md md:text-sm">ABOUT</h1>
         </div>
       </Link>
      
@@ -54,7 +54,7 @@ const Menu = () => {
         activeLink === "skills" ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
-        <h1>SKILLS</h1>
+        <h1 className="text-md md:text-sm">SKILLS</h1>
         </div>
       </Link>
 
@@ -77,7 +77,7 @@ const Menu = () => {
       }`}
     ></div>
     
-        <h1>PROJECTS</h1>
+        <h1 className="text-md md:text-sm">PROJECTS</h1>
        
         </div>
       </Link>
@@ -100,7 +100,7 @@ const Menu = () => {
         activeLink === "certificates"  ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
-        <h1>CERTIFICATES</h1>
+        <h1 className="text-md md:text-sm">CERTIFICATES</h1>
       
         </div>
        
@@ -118,7 +118,7 @@ const Menu = () => {
           activeLink  === "contact" ? "text-gray-400" : ""
         }`}
       >
-        <h1>CONTACT</h1>
+        <h1 className="text-md md:text-sm">CONTACT</h1>
       </Link>
 
       <a
