@@ -10,7 +10,7 @@ const HamburgerMenu = () => {
   return (
     <div>
       <Image
-        className="relative w-full cursor-pointer animate-bounce hover:animate-none"
+        className="relative w-full cursor-pointer hover:animate-none"
         alt="hamburger menu icon"
         width={500}
         height={500}
@@ -26,7 +26,7 @@ const HamburgerMenu = () => {
             onClick={(e) => e.stopPropagation()}
             className="h-screen w-[150px]  bg-white bg-opacity-5 backdrop-blur-lg  font-thin ml-auto p-5 flex flex-col gap-4"
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3">
               <Menu />
             </div>
           </div>
