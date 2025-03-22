@@ -8,10 +8,14 @@ const Header = () => {
   const { isScrollingDown } = useScrollDirection();
 
   return (
+    //header1 animation
+  //   <div
+  //   className={`fixed top-0 left-0 w-full bg-[#0a192f] text-white z-50 transition-transform duration-500 ${
+  //     isScrollingDown ? "-translate-y-full" : "translate-y-0"
+  //   }`}
+  // >
     <div
-      className={`fixed top-0 left-0 w-full bg-[#0a192f] text-white z-50 transition-transform duration-500 ${
-        isScrollingDown ? "-translate-y-full" : "translate-y-0"
-      }`}
+      className={`fixed top-0 left-0 w-full bg-[#0a192f] text-white z-50 transition-transform duration-500 `}
     >
       <div className=" flex justify-between items-center px-7 py-5 w-full bg-[#0a192f] text-white z-50 xl:px-32">
         <div className="flex items-center gap-5">
