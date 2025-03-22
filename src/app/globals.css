@@ -61,17 +61,25 @@
 
   /*page loading animation*/
  
-  @keyframes line-grow {
-    from {
-      width: 0;
+  @keyframes line-move {
+    0% {
+      transform: translateX(-10%); /* Start slightly off the left edge */
     }
-    to {
-      width: 100%;
+    50% {
+      transform: translateX(100%); /* Move to the right edge */
+    }
+    51% {
+      transform: translateX(100%); /* Hold position momentarily */
+    }
+    100% {
+      transform: translateX(-10%); /* Move back to the start */
     }
   }
   
-  .animate-line-grow {
-    animation: line-grow 1s linear forwards;
+  .animate-line-move {
+    width: 60%; /* Adjust the length of the green line */
+    margin-left: -10%; /* Overlap on both sides */
+    animation: line-move 1.5s linear infinite;
   }
   
 /* 
