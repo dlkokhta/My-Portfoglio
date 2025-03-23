@@ -27,9 +27,8 @@ const HomePage = () => {
 
   return (
     <main className="px-7 sm:px-20 pt-5 pb-20 md:px-20 w-full flex flex-row lg:gap-[370px] lg:px-20 xl:gap-[400px] xl:px-40 2xl:px-80 3xl:px-[460px] 4xl:px-[500px]">
-      {isLoading ? (
-        <Loading />
-      ) : (
+     
+     
         <>
           <div className=" lg:mt-12 xl:mt-0">
             <Header2 />
@@ -58,7 +57,7 @@ const HomePage = () => {
             </div>
           </div>
         </>
-      )}
+     
     </main>
   );
 };
