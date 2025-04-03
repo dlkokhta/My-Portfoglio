@@ -46,9 +46,52 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+     <head>
+        {/* Essential Meta Tags */}
+        <title>Dimitri Kokhtashvili - Web Developer Portfolio</title>
+        <meta name="description" content="I'm Dimitri Kokhtashvili, a passionate web developer. Explore my portfolio showcasing my projects in Next.js, React, and modern web technologies." />
+        <meta name="keywords" content="Dimitri Kokhtashvili, web developer, portfolio, Next.js, React, Frontend, Full-stack, JavaScript, Tailwind CSS" />
+        <meta name="author" content="Dimitri Kokhtashvili" />
+
+        {/* Mobile Optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
+
+        {/* Open Graph (Facebook, LinkedIn) */}
+        <meta property="og:title" content="Dimitri Kokhtashvili - Web Developer Portfolio" />
+        <meta property="og:description" content="Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies." />
+        <meta property="og:image" content="https://www.dimitrikokhtashvili.dev" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dimitrikokhtashvili.dev" />
+
+        {/* Twitter Card (for better link previews on Twitter/X) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Dimitri Kokhtashvili - Web Developer Portfolio" />
+        <meta name="twitter:description" content="Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies." />
+        <meta name="twitter:image" content="https://www.dimitrikokhtashvili.dev" />
+        <meta name="twitter:creator" content="@yourTwitterHandle" />
+
+        {/* Canonical URL to Avoid Duplicate Content Issues */}
+        <link rel="canonical" href="https://www.dimitrikokhtashvili.dev" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* JSON-LD Structured Data for Google (SEO Boost) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Dimitri Kokhtashvili",
+            "url": "https://www.dimitrikokhtashvili.dev",
+            "sameAs": [
+              "https://github.com/dlkokhta",
+              "https://www.linkedin.com/in/dimitri-kokhtashvili-6a816a297/"
+            ],
+            "jobTitle": "Web Developer",
+            "description": "I'm a passionate web developer specializing in Next.js, React, and modern web technologies."
+          })}
+        </script>
+      </head>
       <body className={roboto.className}>
         {/* <div className="lg:hidden">
           <Header />
