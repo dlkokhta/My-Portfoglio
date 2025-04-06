@@ -47,28 +47,38 @@ export default function RootLayout({
   return (
     <html lang="en">
      <head>
+        <meta charSet="UTF-8" />
+        <meta name="language" content="English" />
+        <meta name="title" content="Dimitri Kokhtashvili - Web Developer Portfolio" />
+        <meta name="copyright" content="© 2025 Dimitri Kokhtashvili" />
+        <meta name="language" content="English" />
         {/* Essential Meta Tags */}
         <title>Dimitri Kokhtashvili - Web Developer Portfolio</title>
+        <meta name="author" content="Dimitri Kokhtashvili" />
         <meta name="description" content="I'm Dimitri Kokhtashvili, a passionate web developer. Explore my portfolio showcasing my projects in Next.js, React, and modern web technologies." />
         <meta name="keywords" content="Dimitri Kokhtashvili, web developer, portfolio, Next.js, React, Frontend, Full-stack, JavaScript, Tailwind CSS" />
-        <meta name="author" content="Dimitri Kokhtashvili" />
+        <meta name="robots" content="index, follow" />
 
         {/* Mobile Optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="HandheldFriendly" content="true" />
 
         {/* Open Graph (Facebook, LinkedIn) */}
         <meta property="og:title" content="Dimitri Kokhtashvili - Web Developer Portfolio" />
         <meta property="og:description" content="Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies." />
-        <meta property="og:image" content="https://www.dimitrikokhtashvili.dev" />
+        <meta property="og:image" content="https://www.dimitrikokhtashvili.dev/myPhoto.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dimitrikokhtashvili.dev" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:site_name" content="Dimitri Kokhtashvili" />
 
         {/* Twitter Card (for better link previews on Twitter/X) */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Dimitri Kokhtashvili - Web Developer Portfolio" />
         <meta name="twitter:description" content="Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies." />
-        <meta name="twitter:image" content="https://www.dimitrikokhtashvili.dev" />
-        <meta name="twitter:creator" content="@yourTwitterHandle" />
+        <meta name="twitter:image" content="https://www.dimitrikokhtashvili.dev/myPhoto.png" />
+        {/* <meta name="twitter:creator" content="@yourTwitterHandle" /> */}
 
         {/* Canonical URL to Avoid Duplicate Content Issues */}
         <link rel="canonical" href="https://www.dimitrikokhtashvili.dev" />
