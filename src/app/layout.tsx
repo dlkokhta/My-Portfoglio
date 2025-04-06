@@ -9,8 +9,6 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-
-
 // export const metadata: Metadata = {
 //   title: "Dimitri Kokhtashvili | Full-Stack Developer | React, Next.js, Express.js Expert",
 //   description: "Full-Stack Developer skilled in React, Next.js, and MongoDB, creating responsive web apps.",
@@ -24,8 +22,7 @@ const roboto = Roboto({
 //     description: "Skilled developer in React, Node.js, MongoDB. Creating scalable, responsive web applications.",
 //     locale:"en_US",
 //     siteName:"Dimitri Kokhtashvili",
-   
-    
+
 //   },
 
 //   viewport: "width=device-width, initial-scale=1.0",
@@ -38,7 +35,6 @@ const roboto = Roboto({
 //   // },
 // };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -46,17 +42,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     <head>
+      <head>
         <meta charSet="UTF-8" />
         <meta name="language" content="English" />
-        <meta name="title" content="Dimitri Kokhtashvili - Web Developer Portfolio" />
+        <meta
+          name="title"
+          content="Dimitri Kokhtashvili - Web Developer Portfolio"
+        />
         <meta name="copyright" content="© 2025 Dimitri Kokhtashvili" />
         <meta name="language" content="English" />
         {/* Essential Meta Tags */}
         <title>Dimitri Kokhtashvili - Web Developer Portfolio</title>
         <meta name="author" content="Dimitri Kokhtashvili" />
-        <meta name="description" content="I'm Dimitri Kokhtashvili, a passionate web developer. Explore my portfolio showcasing my projects in Next.js, React, and modern web technologies." />
-        <meta name="keywords" content="Dimitri Kokhtashvili, web developer, portfolio, Next.js, React, Frontend, Full-stack, JavaScript, Tailwind CSS" />
+        <meta
+          name="description"
+          content="I'm Dimitri Kokhtashvili, a passionate web developer. Explore my portfolio showcasing my projects in Next.js, React, and modern web technologies."
+        />
+        <meta
+          name="keywords"
+          content="Dimitri Kokhtashvili, web developer, portfolio, Next.js, React, Frontend, Full-stack, JavaScript, Tailwind CSS"
+        />
         <meta name="robots" content="index, follow" />
 
         {/* Mobile Optimization */}
@@ -65,9 +70,18 @@ export default function RootLayout({
         <meta name="HandheldFriendly" content="true" />
 
         {/* Open Graph (Facebook, LinkedIn) */}
-        <meta property="og:title" content="Dimitri Kokhtashvili - Web Developer Portfolio" />
-        <meta property="og:description" content="Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies." />
-        <meta property="og:image" content="https://www.dimitrikokhtashvili.dev/myPhoto.png" />
+        <meta
+          property="og:title"
+          content="Dimitri Kokhtashvili - Web Developer Portfolio"
+        />
+        <meta
+          property="og:description"
+          content="Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies."
+        />
+        <meta
+          property="og:image"
+          content="https://www.dimitrikokhtashvili.dev/myPhoto.png"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dimitrikokhtashvili.dev" />
         <meta property="og:locale" content="en-US" />
@@ -75,9 +89,18 @@ export default function RootLayout({
 
         {/* Twitter Card (for better link previews on Twitter/X) */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Dimitri Kokhtashvili - Web Developer Portfolio" />
-        <meta name="twitter:description" content="Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies." />
-        <meta name="twitter:image" content="https://www.dimitrikokhtashvili.dev/myPhoto.png" />
+        <meta
+          name="twitter:title"
+          content="Dimitri Kokhtashvili - Web Developer Portfolio"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.dimitrikokhtashvili.dev/myPhoto.png"
+        />
         {/* <meta name="twitter:creator" content="@yourTwitterHandle" /> */}
 
         {/* Canonical URL to Avoid Duplicate Content Issues */}
@@ -87,20 +110,24 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
 
         {/* JSON-LD Structured Data for Google (SEO Boost) */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Dimitri Kokhtashvili",
-            "url": "https://www.dimitrikokhtashvili.dev",
-            "sameAs": [
-              "https://github.com/dlkokhta",
-              "https://www.linkedin.com/in/dimitri-kokhtashvili-6a816a297/"
-            ],
-            "jobTitle": "Web Developer",
-            "description": "I'm a passionate web developer specializing in Next.js, React, and modern web technologies."
-          })}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Dimitri Kokhtashvili",
+              url: "https://www.dimitrikokhtashvili.dev",
+              sameAs: [
+                "https://github.com/dlkokhta",
+                "https://www.linkedin.com/in/dimitri-kokhtashvili-6a816a297/",
+              ],
+              jobTitle: "Web Developer",
+              description:
+                "I'm a passionate web developer specializing in Next.js, React, and modern web technologies.",
+            }),
+          }}
+        />
       </head>
       <body className={roboto.className}>
         {/* <div className="lg:hidden">
