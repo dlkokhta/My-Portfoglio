@@ -98,6 +98,7 @@ export default function RootLayout({
           content="Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies."
         />
         <meta
+          className="w-[1200px] h-auto"
           name="twitter:image"
           content="https://www.dimitrikokhtashvili.dev/myPhoto.png"
         />
