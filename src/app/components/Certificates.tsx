@@ -101,6 +101,20 @@ const Certificates = () => {
           />
         </a>
       </div>
+
+
+      
+      <div className="mt-10">
+        <p className="mb-3">Coursera: Meta Front-End Developer Capstone</p>
+        <a href="https://www.coursera.org/account/accomplishments/verify/1KZS9AJLMT2I">
+          <Image
+            src="/capstone.jpeg"
+            alt="capstone"
+            width={500}
+            height={500}
+          />
+        </a>
+      </div>
     </div>
   );
 };
