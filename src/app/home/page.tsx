@@ -9,6 +9,7 @@ import Certificates from "../components/Certificates";
 import Loading from "../components/Loading";
 import { useState, useEffect } from "react";
 import Locading from "../components/Loading";
+import ContactForm from  "../components/ContactForm"
 
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,6 +56,10 @@ const HomePage = () => {
 
             <div id="contact" className="section lg:hidden">
               <Contact />
+            </div>
+
+            <div id="contactForm" className="section">
+              <ContactForm />
             </div>
           </div>
         </>

@@ -18,13 +18,13 @@ const Menu = () => {
         smooth={true}
         duration={500}
         spy={true}
-        offset={-100} 
+        offset={-100}
         onSetActive={handleSetActive}
         onClick={() => handleClick("about")}
         className={`cursor-pointer ${
           activeLink === "about" ? "text-gray-400" : ""
         }`}
-        
+
       >
          <div className="flex items-center gap-5 group">
          <div
@@ -35,7 +35,7 @@ const Menu = () => {
           <h1 className="text-sm md:text-base">ABOUT</h1>
         </div>
       </Link>
-     
+
       <Link
         to="skills"
         smooth={true}
@@ -46,7 +46,7 @@ const Menu = () => {
         className={`cursor-pointer transition-colors duration-700 ${
           activeLink === "skills" ? "text-gray-400" : ""
         }`}
-       
+
       >
          <div className="flex items-center gap-5 group">
          <div
@@ -76,9 +76,9 @@ const Menu = () => {
         activeLink === "projects" ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
       }`}
     ></div>
-    
+
         <h1 className="text-sm md:text-base">PROJECTS</h1>
-       
+
         </div>
       </Link>
 
@@ -101,25 +101,35 @@ const Menu = () => {
       }`}
     ></div>
         <h1 className="text-sm md:text-base">CERTIFICATES</h1>
-      
+
         </div>
-       
+
       </Link>
 
       <Link
-        to="contact"
+        to="contactForm"
         smooth={true}
         duration={500}
         spy={true}
         offset={-50}
         onSetActive={handleSetActive}
-        onClick={() => handleClick("contact")}
-        className={`cursor-pointer lg:hidden ${
-          activeLink  === "contact" ? "text-gray-400" : ""
+        onClick={() => handleClick("contactForm")}
+        className={`cursor-pointer ${
+          activeLink === "contactForm" ? "text-gray-400" : ""
         }`}
       >
-        <h1 className="text-sm md:text-sm">CONTACT</h1>
+        <div className="flex items-center gap-5 group">
+        <div
+      className={`h-0.5 w-10 transition-all duration-500 hidden lg:block ${
+        activeLink === "contactForm"  ? "bg-gray-400 w-24" : "bg-white group-hover:bg-gray-400 group-hover:w-24"
+      }`}
+    ></div>
+        <h1 className="text-sm md:text-base">CONTACT ME</h1>
+
+        </div>
+
       </Link>
+
 
       <a
         href="Dimitri Kokhtashvili.pdf"
