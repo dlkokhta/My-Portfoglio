@@ -9,7 +9,7 @@ import Certificates from "../components/Certificates";
 import Loading from "../components/Loading";
 import { useState, useEffect } from "react";
 import Locading from "../components/Loading";
-import ContactForm from  "../components/ContactForm"
+import ContactForm from "../components/ContactForm";
 
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);

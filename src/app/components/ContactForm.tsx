@@ -1,7 +1,7 @@
 const ContactForm = () => {
   return (
-    <div className="">
-      <form className="flex flex-col">
+    <div className="mt-20 border p-5">
+      <form className="flex flex-col gap-7">
         <input type="text" name="name" placeholder="Your name" required />
         <input type="email" name="email" placeholder="Your email" required />
         <textarea name="message" placeholder="Your message" required></textarea>

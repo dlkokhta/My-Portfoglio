@@ -75,14 +75,14 @@
       transform: translateX(-10%); /* Move back to the start */
     }
   }
-  
+
   .animate-line-move {
     width: 60%; /* Adjust the length of the green line */
     margin-left: -10%; /* Overlap on both sides */
     animation: line-move 1.5s linear infinite;
   }
-  
-/* 
+
+/*
   * {
     outline: 1px solid red;
   } */

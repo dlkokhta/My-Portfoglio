@@ -16,7 +16,9 @@ const Certificates = () => {
       </div>
 
       <div className="mt-10">
-        <p className="mb-3">Coursera: IBM Developing Front-End Apps with React</p>
+        <p className="mb-3">
+          Coursera: IBM Developing Front-End Apps with React
+        </p>
         <a href="https://coursera.org/share/8fd016b332423bbe513a5f07272cc82c">
           <Image
             src="/IBMReact.jpeg"
@@ -28,7 +30,9 @@ const Certificates = () => {
       </div>
 
       <div className="mt-10">
-        <p className="mb-3">Coursera: Meta Introduction to Front-End Development</p>
+        <p className="mb-3">
+          Coursera: Meta Introduction to Front-End Development
+        </p>
         <a href="https://coursera.org/share/c9cea21d40226d08f8bdc8a884322a65">
           <Image
             src="/frontEnd.jpeg"
@@ -39,7 +43,6 @@ const Certificates = () => {
         </a>
       </div>
 
-      
       <div className="mt-10">
         <p className="mb-3">Coursera: Meta Programming with JavaScript</p>
         <a href="https://coursera.org/share/00207c44b3ada02ab54aeccdfa1ef360">
@@ -76,7 +79,6 @@ const Certificates = () => {
         </a>
       </div>
 
-
       <div className="mt-10">
         <p className="mb-3">Coursera: Meta React basics</p>
         <a href="https://www.coursera.org/account/accomplishments/verify/NM2Y61PW8ACR">
@@ -88,7 +90,6 @@ const Certificates = () => {
           />
         </a>
       </div>
-
 
       <div className="mt-10">
         <p className="mb-3">Coursera: Meta Principles of UX/UI Design</p>
@@ -102,17 +103,17 @@ const Certificates = () => {
         </a>
       </div>
 
-
-      
       <div className="mt-10">
         <p className="mb-3">Coursera: Meta Front-End Developer Capstone</p>
         <a href="https://www.coursera.org/account/accomplishments/verify/1KZS9AJLMT2I">
-          <Image
-            src="/capstone.jpeg"
-            alt="capstone"
-            width={500}
-            height={500}
-          />
+          <Image src="/capstone.jpeg" alt="capstone" width={500} height={500} />
+        </a>
+      </div>
+
+      <div className="mt-10">
+        <p className="mb-3">Coursera: Meta Coding Interview Preparation</p>
+        <a href="https://www.coursera.org/account/accomplishments/verify/E8PH8CN5NLRX">
+          <Image src="" alt="" width={500} height={500} />
         </a>
       </div>
     </div>
