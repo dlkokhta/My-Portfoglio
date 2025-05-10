@@ -6,7 +6,6 @@ const Projects = () => {
     <div className="mt-20 text-white">
       <h1 className="text-xl font-bold mb-5 text-center">Projects</h1>
 
-
       <ProjectsDetails
         projectName="E-commerce"
         projectImage="/Ecommerce.png"
@@ -201,17 +200,14 @@ const Projects = () => {
         ]}
       />
 
-
-
-<ProjectsDetails
+      <ProjectsDetails
         projectName="todo-list-app"
         projectImage="/todo-list.png"
         projectDescription={[
           "Add, Edit, and Delete Todos – Easily manage your tasks with a simple and intuitive interface.",
           "Mark as Completed – Clicking 'Completed' moves the todo to the history view, replacing the normal todo list with completed tasks.",
           "Search Functionality – Quickly find specific tasks using a search bar that filters todos by name.",
-          "State Management – Redux Toolkit handles global state management for efficient updates and reactivity."
-          
+          "State Management – Redux Toolkit handles global state management for efficient updates and reactivity.",
         ]}
         projectTechnologies={[
           " React, TypeScript, Redux, Node.js, Express, SQLite, Yup, Joi, Tailwind",
@@ -220,8 +216,7 @@ const Projects = () => {
           {
             title: "Front-end",
             pageLink: "https://to-do-list-app-dimitrikokhtashvili.vercel.app/",
-            githubLink:
-              "https://github.com/dlkokhta/To-Do-List-App",
+            githubLink: "https://github.com/dlkokhta/To-Do-List-App",
           },
 
           {
@@ -232,8 +227,7 @@ const Projects = () => {
         ]}
       />
 
-
-{/* <ProjectsDetails
+      {/* <ProjectsDetails
         projectName=""
         projectImage=""
         projectDescription={[
@@ -256,13 +250,9 @@ const Projects = () => {
         ]}
       /> */}
 
-
-       <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-10"></div>
+      <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-10"></div>
     </div>
-    
   );
-
-  
 };
 
 export default Projects;
