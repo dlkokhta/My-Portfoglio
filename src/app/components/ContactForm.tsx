@@ -1,12 +1,7 @@
 import { useForm } from "react-hook-form";
-import { useState } from "react";
 import axios from "axios";
 
 const ContactForm = () => {
-  const [messageStatus, setMessageStatus] = useState<
-    "success" | "error" | null
-  >(null);
-
   const {
     register,
     handleSubmit,
@@ -17,32 +12,18 @@ const ContactForm = () => {
   const onSubmit = async (data: any) => {
     try {
       const response = await axios.post("/api/contact", data);
+
       if (response.status === 200) {
-        setMessageStatus("success");
       } else {
-        setMessageStatus("error");
       }
     } catch (error) {
-      setMessageStatus("error");
+      console.error("Send error:", error);
+      alert("Something went wrong.");
     }
-
-    // Hide the message after 3 seconds
-    setTimeout(() => setMessageStatus(null), 3000);
   };
 
   return (
     <div className="mt-20 border p-5">
-      {messageStatus && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
-          <div className="bg-white border px-6 py-4 rounded-lg shadow-xl text-center">
-            <p className="text-lg font-semibold text-black">
-              {messageStatus === "success"
-                ? "Message sent!"
-                : "Failed to send message."}
-            </p>
-          </div>
-        </div>
-      )}
       <form className="flex flex-col gap-7" onSubmit={handleSubmit(onSubmit)}>
         <input
           {...register("name")}
@@ -62,7 +43,7 @@ const ContactForm = () => {
           {...register("message")}
           placeholder="Your message"
           required
-          className="px-3"
+          className="px-3 h-32"
         ></textarea>
         <button
           type="submit"
