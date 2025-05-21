@@ -23,31 +23,31 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-20 border p-5">
+    <div className="mt-20 p-5">
       <form className="flex flex-col gap-7" onSubmit={handleSubmit(onSubmit)}>
         <input
           {...register("name")}
           type="text"
           placeholder="Your name"
           required
-          className="px-3"
+          className="border-2  focus:border-cyan-600 focus:outline-none px-3 py-2 rounded"
         />
         <input
           {...register("email")}
           type="email"
           placeholder="Your email"
           required
-          className="px-3"
+          className="border-2  focus:border-cyan-600 focus:outline-none px-3 py-2 rounded"
         />
         <textarea
           {...register("message")}
           placeholder="Your message"
           required
-          className="px-3 h-32"
+          className="h-32 pt-3 border-2  focus:border-cyan-600 focus:outline-none px-3 py-2 rounded"
         ></textarea>
         <button
           type="submit"
-          className="border px-2 py-1 rounded-md border-green-500  bg-black cursor-pointer duration-500 transition hover:-translate-y-1 hover:-translate-x-1 text-white mt-3"
+          className="border px-2 py-1 rounded-md border-cyan-600 bg-black cursor-pointer duration-500 transition hover:-translate-y-1 hover:-translate-x-1 text-white mt-3"
         >
           Send
         </button>
