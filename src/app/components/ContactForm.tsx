@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
   const {
@@ -14,8 +15,11 @@ const ContactForm = () => {
       const response = await axios.post("/api/contact", data);
 
       if (response.status === 200) {
+        toast.success("Message sent successfully!");
       } else {
+        toast.error("Failed to send message.");
       }
+      reset();
     } catch (error) {
       console.error("Send error:", error);
       alert("Something went wrong.");
@@ -23,7 +27,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-20 p-5">
+    <div className="mt-20">
       <form className="flex flex-col gap-7" onSubmit={handleSubmit(onSubmit)}>
         <input
           {...register("name")}

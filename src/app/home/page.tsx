@@ -10,6 +10,8 @@ import Loading from "../components/Loading";
 import { useState, useEffect } from "react";
 import Locading from "../components/Loading";
 import ContactForm from "../components/ContactForm";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -57,6 +59,17 @@ const HomePage = () => {
             <div id="contact" className="section lg:hidden">
               <Contact />
             </div>
+            <ToastContainer
+              position="top-right"
+              autoClose={3000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+            />
 
             <div id="contactForm" className="section">
               <ContactForm />
