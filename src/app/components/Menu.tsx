@@ -6,10 +6,11 @@ const Menu = () => {
 
   const handleSetActive = (to: any) => {
     setActiveLink(to);
+    console.log(activeLink);
   };
 
   const handleClick = (to: any) => {
-    setActiveLink(to); // Immediately set the active link on click
+    setActiveLink(to);
   };
   return (
     <>
@@ -90,7 +91,7 @@ const Menu = () => {
         smooth={true}
         duration={500}
         spy={true}
-        offset={-50}
+        // offset={-100}
         onSetActive={handleSetActive}
         onClick={() => handleClick("certificates")}
         className={`cursor-pointer ${
@@ -110,21 +111,21 @@ const Menu = () => {
       </Link>
 
       <Link
-        to="contactForm"
+        to="contactMe"
         smooth={true}
         duration={500}
         spy={true}
-        offset={-50}
+        offset={0}
         onSetActive={handleSetActive}
-        onClick={() => handleClick("contactForm")}
+        onClick={() => handleClick("contactMe")}
         className={`cursor-pointer ${
-          activeLink === "contactForm" ? "text-gray-400" : ""
+          activeLink === "contactMe" ? "text-gray-400" : ""
         }`}
       >
         <div className="flex items-center gap-5 group">
           <div
             className={`h-0.5 w-10 transition-all duration-500 hidden lg:block ${
-              activeLink === "contactForm"
+              activeLink === "contactMe"
                 ? "bg-gray-400 w-24"
                 : "bg-white group-hover:bg-gray-400 group-hover:w-24"
             }`}

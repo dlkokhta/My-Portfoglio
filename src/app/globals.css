@@ -2,85 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* * {
     @apply m-0 p-0 box-border;
   }
    */
-  body {
-    /* overflow-x: hidden; */
-    width: 100%; 
-    min-height: 100vh;  
-    background-color: #0a192f;
-    
-  }
-  
-  #root {
-    height: 100%;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .section {
-  padding-top: 50px; 
-  margin-top: -50px; 
+body {
+  /* overflow-x: hidden; */
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0a192f;
 }
 
-  .btn-custom {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    position: relative;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s ease; 
-  }
-  
+#root {
+  height: 100%;
+}
 
-  .btn-custom:hover {
-   
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
-    transform: translate(-5px, -5px);
-  }
-  
-  .btn-custom:active {
-   
-    transform: translate(-10px, -10px); 
-    box-shadow: none; 
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .hover-effect p:hover {
-    background-color: cyan;
-    
-  }
+.section {
+  padding-top: 50px;
+  margin-top: -50px;
+}
 
-  /*page loading animation*/
- 
-  @keyframes line-move {
-    0% {
-      transform: translateX(-10%); /* Start slightly off the left edge */
-    }
-    50% {
-      transform: translateX(100%); /* Move to the right edge */
-    }
-    51% {
-      transform: translateX(100%); /* Hold position momentarily */
-    }
-    100% {
-      transform: translateX(-10%); /* Move back to the start */
-    }
-  }
+.btn-custom {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
 
-  .animate-line-move {
-    width: 60%; /* Adjust the length of the green line */
-    margin-left: -10%; /* Overlap on both sides */
-    animation: line-move 1.5s linear infinite;
+.btn-custom:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translate(-5px, -5px);
+}
+
+.btn-custom:active {
+  transform: translate(-10px, -10px);
+  box-shadow: none;
+}
+
+.hover-effect p:hover {
+  background-color: cyan;
+}
+
+/*page loading animation*/
+
+@keyframes line-move {
+  0% {
+    transform: translateX(-10%); /* Start slightly off the left edge */
   }
+  50% {
+    transform: translateX(100%); /* Move to the right edge */
+  }
+  51% {
+    transform: translateX(100%); /* Hold position momentarily */
+  }
+  100% {
+    transform: translateX(-10%); /* Move back to the start */
+  }
+}
+
+.animate-line-move {
+  width: 60%; /* Adjust the length of the green line */
+  margin-left: -10%; /* Overlap on both sides */
+  animation: line-move 1.5s linear infinite;
+}
 
 /*
   * {

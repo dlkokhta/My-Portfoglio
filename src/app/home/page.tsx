@@ -59,6 +59,9 @@ const HomePage = () => {
             <div id="contact" className="section lg:hidden">
               <Contact />
             </div>
+            <div id="contactMe" className="section">
+              <ContactForm />
+            </div>
             <ToastContainer
               position="top-right"
               autoClose={3000}
@@ -70,10 +73,6 @@ const HomePage = () => {
               pauseOnHover
               theme="light"
             />
-
-            <div id="contactForm" className="section">
-              <ContactForm />
-            </div>
           </div>
         </>
       )}

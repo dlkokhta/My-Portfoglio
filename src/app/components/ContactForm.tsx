@@ -18,6 +18,7 @@ const ContactForm = () => {
         toast.success("Message sent successfully!");
       } else {
         toast.error("Failed to send message.");
+        <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-10"></div>;
       }
       reset();
     } catch (error) {
@@ -27,7 +28,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-20">
+    <div className="pb-48">
+      <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-10"></div>
+      <h3 className="text-xl font-bold mb-5 text-center text-white mt-24">
+        Contact Me
+      </h3>
       <form className="flex flex-col gap-7" onSubmit={handleSubmit(onSubmit)}>
         <input
           {...register("name")}
