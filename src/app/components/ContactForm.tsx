@@ -28,7 +28,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="pb-48">
+    <div className="pb-32">
       <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-10"></div>
       <h3 className="text-xl font-bold mb-5 text-center text-white mt-24">
         Contact Me

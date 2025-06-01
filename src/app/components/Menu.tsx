@@ -91,7 +91,7 @@ const Menu = () => {
         smooth={true}
         duration={500}
         spy={true}
-        // offset={-100}
+        offset={-50}
         onSetActive={handleSetActive}
         onClick={() => handleClick("certificates")}
         className={`cursor-pointer ${
@@ -115,7 +115,7 @@ const Menu = () => {
         smooth={true}
         duration={500}
         spy={true}
-        offset={0}
+        offset={-100}
         onSetActive={handleSetActive}
         onClick={() => handleClick("contactMe")}
         className={`cursor-pointer ${
