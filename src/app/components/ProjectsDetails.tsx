@@ -23,16 +23,16 @@ const ProjectsDetails: React.FC<ProjectsDetailsProps> = ({
   projectSVGs,
 }) => {
   return (
-    <div className="flex flex-col items-center ">
+    <div className="flex flex-col items-center">
       <h2 className="mb-2">{projectName}</h2>
       <div className="pb-10 ">
-        <div className="relative overflow-hidden group ">
+        <div className="relative overflow-hidden group w-auto h-auto">
           <Image
             src={projectImage}
             alt={`${projectName} image`}
             width={500}
             height={500}
-            className="object-cover filter grayscale transition-transform duration-700  transform group-hover:filter-none group-hover:scale-105"
+            className="object-cover filter grayscale transition-transform duration-700  transform group-hover:filter-none group-hover:scale-105 w-full h-full"
           />
 
           <div className="absolute pt-3 inset-0 flex flex-col bg-black bg-opacity-80  group-hover:opacity-100 transition-opacity opacity-0 duration-700 text-white px-3">

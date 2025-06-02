@@ -3,7 +3,7 @@ import SkillsDetails from "../components/SkillsDetails";
 const Skills = () => {
   return (
     <>
-      <div className=" mt-20 text-white">
+      <div className=" mt-10 text-white">
         <h1 className="text-center text-xl font-bold">Skills</h1>
         <h4 className="mt-5 mb-5 font-light break-words block">
           Programming Languages, Libraries, frameworks and tools:

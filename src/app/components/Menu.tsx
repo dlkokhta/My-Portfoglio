@@ -6,12 +6,12 @@ const Menu = () => {
 
   const handleSetActive = (to: any) => {
     setActiveLink(to);
-    console.log(activeLink);
   };
 
   const handleClick = (to: any) => {
     setActiveLink(to);
   };
+
   return (
     <>
       <Link

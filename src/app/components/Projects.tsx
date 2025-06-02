@@ -3,7 +3,7 @@ import ProjectsDetails from "../components/ProjectsDetails";
 
 const Projects = () => {
   return (
-    <div className="mt-20 text-white">
+    <div className="mt-10 text-white">
       <h1 className="text-xl font-bold mb-5 text-center">Projects</h1>
 
       <ProjectsDetails

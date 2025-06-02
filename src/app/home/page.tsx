@@ -52,7 +52,7 @@ const HomePage = () => {
               <Projects />
             </div>
 
-            <div id="certificates" className="section">
+            <div id="certificates" className="section ">
               <Certificates />
             </div>
 

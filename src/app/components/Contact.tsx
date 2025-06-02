@@ -5,7 +5,7 @@ const Contact = () => {
       <h1 className="text-center text-xl font-bold text-white lg:hidden">
         Contact
       </h1>
-      <div className="mt-10 flex justify-between px-10 sm:px-32 lg:px-0 lg:gap-8">
+      <div className="mt-10 flex justify-between px-10 sm:px-32 lg:px-0 lg:gap-8 lg:mt-20">
         <a href="https://www.linkedin.com/in/dimitri-kokhtashvili-6a816a297/">
           <Image
             src="/linkedin.png"
@@ -17,7 +17,13 @@ const Contact = () => {
         </a>
 
         <a href="https://github.com/dlkokhta">
-          <Image src="/github.png" alt="github icon" width={27} height={25} />
+          <Image
+            src="/github.png"
+            alt="github icon"
+            width={27}
+            height={25}
+            style={{ height: "auto", width: "auto" }}
+          />
         </a>
 
         <a href="mailto:dl.kokhtashvili@gmail.com" className="lg:hidden">
@@ -27,12 +33,19 @@ const Contact = () => {
             alt="mail icon"
             width={33}
             height={25}
+            style={{ height: "auto", width: "auto" }}
           />
         </a>
 
         <div className="hidden lg:flex lg:flex-col lg:gap-5 mt-1">
           <div className="flex gap-3">
-            <Image src="/mail.png" alt="mail icon" width={25} height={15} />
+            <Image
+              src="/mail.png"
+              alt="mail icon"
+              width={25}
+              height={15}
+              style={{ height: "auto", width: "auto" }}
+            />
             <a
               href="mailto:dl.kokhtashvili@gmail.com"
               className="cursor-pointer"
@@ -42,7 +55,13 @@ const Contact = () => {
           </div>
 
           <div className="flex gap-3">
-            <Image src="/phone.png" alt="phone icon" width={20} height={15} />
+            <Image
+              src="/phone.png"
+              alt="phone icon"
+              width={20}
+              height={15}
+              style={{ height: "auto", width: "auto" }}
+            />
             <a className="cursor-pointer">+995555331167</a>
           </div>
         </div>
@@ -56,6 +75,7 @@ const Contact = () => {
                 alt="phone icon"
                 width={25}
                 height={30}
+                style={{ height: "auto", width: "auto" }}
               />
               <span className="absolute left-10 bottom-1 opacity-0 transition-opacity duration-300 text-white bg-black px-2 py-1 rounded-md group-hover:opacity-100">
                 +995555331167
