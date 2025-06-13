@@ -124,12 +124,17 @@ const Certificates = () => {
           </a>
         </div>
 
-        {/* <div className="mt-10">
-        <p className="mb-3">Meta Coding Interview Preparation</p>
-        <a href="https://www.coursera.org/account/accomplishments/verify/E8PH8CN5NLRX">
-          <Image src="" alt="" width={500} height={500} />
-        </a>
-      </div> */}
+        <div className="mt-10">
+          <p className="mb-3">Meta Coding Interview Preparation</p>
+          <a href="https://www.coursera.org/account/accomplishments/verify/1KZS9AJLMT2I">
+            <Image
+              src="/CERTIFICATE_E8PH8CN5NLRX.jpeg"
+              alt="Coding Interview certificate"
+              width={500}
+              height={500}
+            />
+          </a>
+        </div>
       </div>
     </>
   );

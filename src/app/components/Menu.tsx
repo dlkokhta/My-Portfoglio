@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { use, useState } from "react";
+import { useCallback, useState } from "react";
 
 const Menu = () => {
   const [activeLink, setActiveLink] = useState("about");
@@ -8,9 +8,24 @@ const Menu = () => {
     setActiveLink(to);
   };
 
-  const handleClick = (to: any) => {
-    setActiveLink(to);
-  };
+  // const handleClick = (to: any) => {
+  //   setActiveLink(to);
+  // };
+
+  const handleAboutClick = useCallback(() => handleSetActive("about"), []);
+  const handleSkillsClick = useCallback(() => handleSetActive("skills"), []);
+  const handleProjectsClick = useCallback(
+    () => handleSetActive("projects"),
+    []
+  );
+  const handleCertificatesClick = useCallback(
+    () => handleSetActive("certificates"),
+    []
+  );
+  const handleContactClick = useCallback(
+    () => handleSetActive("contactMe"),
+    []
+  );
 
   return (
     <>
@@ -21,7 +36,7 @@ const Menu = () => {
         spy={true}
         offset={-100}
         onSetActive={handleSetActive}
-        onClick={() => handleClick("about")}
+        onClick={handleAboutClick}
         className={`cursor-pointer ${
           activeLink === "about" ? "text-gray-400" : ""
         }`}
@@ -44,7 +59,7 @@ const Menu = () => {
         duration={500}
         spy={true}
         onSetActive={handleSetActive}
-        onClick={() => handleClick("skills")}
+        onClick={handleSkillsClick}
         className={`cursor-pointer transition-colors duration-700 ${
           activeLink === "skills" ? "text-gray-400" : ""
         }`}
@@ -68,7 +83,7 @@ const Menu = () => {
         spy={true}
         offset={-50}
         onSetActive={handleSetActive}
-        onClick={() => handleClick("projects")}
+        onClick={handleProjectsClick}
         className={`cursor-pointer ${
           activeLink === "projects" ? "text-gray-400" : ""
         }`}
@@ -93,7 +108,7 @@ const Menu = () => {
         spy={true}
         offset={-50}
         onSetActive={handleSetActive}
-        onClick={() => handleClick("certificates")}
+        onClick={handleCertificatesClick}
         className={`cursor-pointer ${
           activeLink === "certificates" ? "text-gray-400" : ""
         }`}
@@ -117,7 +132,7 @@ const Menu = () => {
         spy={true}
         offset={-100}
         onSetActive={handleSetActive}
-        onClick={() => handleClick("contactMe")}
+        onClick={handleContactClick}
         className={`cursor-pointer ${
           activeLink === "contactMe" ? "text-gray-400" : ""
         }`}
