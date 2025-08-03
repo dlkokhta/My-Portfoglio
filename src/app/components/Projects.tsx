@@ -27,7 +27,7 @@ const Projects = () => {
         projectSVGs={[
           {
             title: "Front-end",
-            pageLink: "https://www.stylestore.ge/",
+            pageLink: "https://ecommerce-front-end-five.vercel.app/",
             githubLink: "https://github.com/dlkokhta/EcommerceFrontEnd",
           },
           {
