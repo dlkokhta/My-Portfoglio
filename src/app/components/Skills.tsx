@@ -35,14 +35,8 @@ const Skills = () => {
           <SkillsDetails name="Yup" />
           <SkillsDetails name="pgAdmin" />
           <SkillsDetails name="MS SQL" />
-          <SkillsDetails name="SQLite" />
-          <SkillsDetails name="C#" />
-          <SkillsDetails name=".NET" />
-          <SkillsDetails name="Entity Framework" />
-          <SkillsDetails name="ASP.NET.CORE" />
-          <SkillsDetails name="MVC" />
-          <SkillsDetails name="VMware Virtualization" />
-          <SkillsDetails name="VirtualBox" />
+          <SkillsDetails name="SQLite" />         
+          <SkillsDetails name="VMware Virtualization" />          
           <SkillsDetails name="Docker" />
           <SkillsDetails name="MikroTik" />
           <SkillsDetails name="Cisco Networking" />

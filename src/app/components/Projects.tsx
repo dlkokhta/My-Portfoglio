@@ -27,12 +27,12 @@ const Projects = () => {
         projectSVGs={[
           {
             title: "Front-end",
-            pageLink: "https://ecommerce-front-end-five.vercel.app/",
+            pageLink: "https://shop.dimitrikokhtashvili.com/",
             githubLink: "https://github.com/dlkokhta/EcommerceFrontEnd",
           },
           {
             title: "Back-end",
-            pageLink: "https://dimitrikokhtashvili.site/",
+            pageLink: "https://api.shop.dimitrikokhtashvili.com/",
             githubLink: "https://github.com/dlkokhta/EcommerceAPI",
           },
         ]}
@@ -250,7 +250,7 @@ const Projects = () => {
         ]}
       /> */}
 
-      <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-10"></div>
+      <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-20"></div>
     </div>
   );
 };
