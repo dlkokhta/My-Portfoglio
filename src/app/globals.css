@@ -76,6 +76,25 @@ body {
   animation: line-move 1.5s linear infinite;
 }
 
+/* Skills slide-up animation */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    visibility: visible;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  visibility: visible;
+}
+
 /*
   * {
     outline: 1px solid red;
