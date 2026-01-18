@@ -200,7 +200,7 @@ const Projects = () => {
         ]}
       />
 
-      <ProjectsDetails
+      {/* <ProjectsDetails
         projectName="todo-list-app"
         projectImage="/todo-list.png"
         projectDescription={[
@@ -225,7 +225,7 @@ const Projects = () => {
             githubLink: "https://github.com/dlkokhta/To-Do-List-App-API",
           },
         ]}
-      />
+      /> */}
 
       {/* <ProjectsDetails
         projectName=""
