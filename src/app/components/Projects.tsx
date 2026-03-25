@@ -38,6 +38,30 @@ const Projects = () => {
         ]}
       />
 
+
+       <ProjectsDetails
+        projectName="Full Auth App"
+        projectImage="/authApp.png"
+        projectDescription={[
+         
+        ]}
+        projectTechnologies={[
+          "  React, TypeScript, Redux, Node.js, NestJS, PostgreSQL, Yup, Joi, Resend, Tailwind",
+        ]}
+        projectSVGs={[
+          {
+            title: "Front-end",
+            pageLink: "https://auth.dimitrikokhtashvili.com/",
+            githubLink: "https://github.com/dlkokhta/EcommerceFrontEnd",
+          },
+          {
+            title: "Back-end",
+            pageLink: "https://api.auth.dimitrikokhtashvili.com/",
+            githubLink: "https://github.com/dlkokhta/EcommerceAPI",
+          },
+        ]}
+      />
+
       <ProjectsDetails
         projectName="entertainment-web-app"
         projectImage="/entertainment-web-app.png"
