@@ -43,10 +43,21 @@ const Projects = () => {
         projectName="Full Auth App"
         projectImage="/authApp.png"
         projectDescription={[
-         
+         "User registration with email verification",
+         "Google OAuth2 sign-in and auto-registration",
+         "JWT authentication with short-lived access tokens and rotating refresh tokens stored in HttpOnly cookies",
+         "Password hashing with Argon2",
+         "Multi-device session management with refresh token rotation, IP and User-Agent tracking per session",
+         "Role-based access control with Admin and Regular user roles",
+         "Protected routes on both frontend and backend",
+         "Token-based password reset flow (schema-ready)",
+         "Automatic token refresh on expired sessions",
+         "Swagger / OpenAPI documentation",
+         "Dockerized PostgreSQL database with Prisma ORM",
+
         ]}
         projectTechnologies={[
-          "  React, TypeScript, Redux, Node.js, NestJS, PostgreSQL, Yup, Joi, Resend, Tailwind",
+          "React, TypeScript, Redux, Node.js, NestJS, PostgreSQL, docker, Resend, Tailwind, ubuntu server",
         ]}
         projectSVGs={[
           {
@@ -56,7 +67,7 @@ const Projects = () => {
           },
           {
             title: "Back-end",
-            pageLink: "https://api.auth.dimitrikokhtashvili.com/",
+            pageLink: "https://api.auth.dimitrikokhtashvili.com/docs",
             githubLink: "https://github.com/dlkokhta/EcommerceAPI",
           },
         ]}
