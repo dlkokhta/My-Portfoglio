@@ -16,6 +16,7 @@ const Certificates = () => {
               alt="advancedReact certificate icon"
               width={500}
               height={500}
+              className="w-full h-auto"
             />
           </a>
         </div>
@@ -32,6 +33,7 @@ const Certificates = () => {
               alt="IBMReact certificate icon"
               width={500}
               height={500}
+              className="w-full h-auto"
             />
           </a>
         </div>
@@ -48,6 +50,7 @@ const Certificates = () => {
               alt="AWS Cloud Technical Essentials certificate icon"
               width={500}
               height={500}
+              className="w-full h-auto"
             />
           </a>
         </div>
@@ -64,6 +67,7 @@ const Certificates = () => {
               alt="advancedReact certificate icon"
               width={500}
               height={500}
+              className="w-full h-auto"
             />
           </a>
         </div>
@@ -80,6 +84,7 @@ const Certificates = () => {
               alt="javascript certificate icon"
               width={500}
               height={500}
+              className="w-full h-auto"
             />
           </a>
         </div>
@@ -96,6 +101,7 @@ const Certificates = () => {
               alt="frontEnd certificate icon"
               width={500}
               height={500}
+              className="w-full h-auto"
             />
           </a>
         </div>
@@ -112,6 +118,7 @@ const Certificates = () => {
               alt="versionControl certificate icon"
               width={500}
               height={500}
+              className="w-full h-auto"
             />
           </a>
         </div>
@@ -128,6 +135,7 @@ const Certificates = () => {
               alt="HTML and CSS in depth certificate icon"
               width={500}
               height={500}
+              className="w-full h-auto"
             />
           </a>
         </div>
@@ -144,6 +152,7 @@ const Certificates = () => {
               alt="React basics certificate icon"
               width={500}
               height={500}
+              className="w-full h-auto"
             />
           </a>
         </div>
@@ -160,6 +169,7 @@ const Certificates = () => {
               alt="Principles of UX/UI Design"
               width={500}
               height={500}
+              className="w-full h-auto"
             />
           </a>
         </div>
