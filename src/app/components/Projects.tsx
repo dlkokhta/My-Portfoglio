@@ -6,6 +6,37 @@ const Projects = () => {
     <div className="mt-10 text-white">
       <h1 className="text-xl font-bold mb-5 text-center">Projects</h1>
 
+
+
+       <ProjectsDetails
+        projectName="entertainment-web-app"
+        projectImage="/entertainment-web-app.png"
+        projectDescription={[
+          "User registration",
+          "Filter options by movie name, move and TV series",
+          "Bookmarking feature for saving favorite movies and TV series",
+          "Error handling with clear messages during registration and login",
+          "Responsive interface for an enhanced user experience",
+        ]}
+        projectTechnologies={[
+          " React, TypeScript, Redux, Node.js, Express, MongoDB, Yup, Joi, Tailwind",
+        ]}
+        projectSVGs={[
+          {
+            title: "Front-end",
+            pageLink: "https://entertainment-web-app-frontend-wine.vercel.app/",
+            githubLink:
+              "https://github.com/dlkokhta/entertainment-web-app-frontend/",
+          },
+
+          {
+            title: "Back-end",
+            pageLink: "https://entertainment-web-app.dimitrikokhtashvili.site/",
+            githubLink: "https://github.com/dlkokhta/entertainment-web-app-API",
+          },
+        ]}
+      />
+
       <ProjectsDetails
         projectName="E-commerce"
         projectImage="/Ecommerce.png"

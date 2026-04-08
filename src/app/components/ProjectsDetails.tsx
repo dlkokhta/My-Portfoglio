@@ -84,16 +84,17 @@ const ProjectsDetails: React.FC<ProjectsDetailsProps> = ({
               </div>
             </div>
 
-            <div className="flex justify-between p-5 mt-auto">
-              {projectSVGs.map((svg, index) => (
-                <ProjectSVG
-                  key={index}
-                  title={svg.title}
-                  pageLink={svg.pageLink}
-                  githubLink={svg.githubLink}
-                />
-              ))}
-            </div>
+           
+          </div>
+           <div className="absolute bottom-0 left-0 right-0 flex justify-between p-5">
+            {projectSVGs.map((svg, index) => (
+              <ProjectSVG
+                key={index}
+                title={svg.title}
+                pageLink={svg.pageLink}
+                githubLink={svg.githubLink}
+              />
+            ))}
           </div>
         </div>
       </div>
