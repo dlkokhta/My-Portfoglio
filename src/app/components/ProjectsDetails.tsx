@@ -86,7 +86,7 @@ const ProjectsDetails: React.FC<ProjectsDetailsProps> = ({
 
            
           </div>
-           <div className="absolute bottom-0 left-0 right-0 flex justify-between p-5">
+           <div className="absolute bottom-0 left-0 right-0 flex justify-between p-3 bg-black bg-opacity-50 group-hover:bg-opacity-0 transition-all duration-700">
             {projectSVGs.map((svg, index) => (
               <ProjectSVG
                 key={index}
