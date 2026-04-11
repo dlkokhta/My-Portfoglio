@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectSVG from "../components/ProjectSVG";
+import ProjectChatButton from "../components/ProjectChatButton";
 
 interface ProjectSVGProps {
   title: string;
@@ -86,15 +87,24 @@ const ProjectsDetails: React.FC<ProjectsDetailsProps> = ({
 
            
           </div>
-           <div className="absolute bottom-0 left-0 right-0 flex justify-between p-3 bg-black bg-opacity-50 group-hover:bg-opacity-0 transition-all duration-700">
-            {projectSVGs.map((svg, index) => (
+           <div className="absolute bottom-0 left-0 right-0 flex justify-between items-end p-3 bg-black bg-opacity-50 group-hover:bg-opacity-0 transition-all duration-700">
+            <ProjectSVG
+              title={projectSVGs[0].title}
+              pageLink={projectSVGs[0].pageLink}
+              githubLink={projectSVGs[0].githubLink}
+            />
+            <ProjectChatButton
+              projectName={projectName}
+              projectDescription={projectDescription}
+              projectTechnologies={projectTechnologies}
+            />
+            {projectSVGs[1] && (
               <ProjectSVG
-                key={index}
-                title={svg.title}
-                pageLink={svg.pageLink}
-                githubLink={svg.githubLink}
+                title={projectSVGs[1].title}
+                pageLink={projectSVGs[1].pageLink}
+                githubLink={projectSVGs[1].githubLink}
               />
-            ))}
+            )}
           </div>
         </div>
       </div>

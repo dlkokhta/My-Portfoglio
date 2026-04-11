@@ -17,7 +17,7 @@ const roboto = Roboto({
 //   openGraph: {
 //     title: "Dimitri Kokhtashvili | Full-Stack Developer",
 //     type: "website",
-//     images: ["https://www.dimitrikokhtashvili.dev/myPhoto.png"],
+//     images: ["https://www.dimitrikokhtashvili.com/myPhoto.png"],
 //     url: "https://www.dimitrikokhtashvili.com",
 //     description: "Skilled developer in React, Node.js, MongoDB. Creating scalable, responsive web applications.",
 //     locale:"en_US",
@@ -31,7 +31,7 @@ const roboto = Roboto({
 //   //   card: "summary_large_image",
 //   //   title: "Dimitri Kokhtashvili - Portfolio",
 //   //   description: "Explore Dimitri's full-stack development projects and skills.",
-//   //   image: "https://www.dimitrikokhtashvili.dev/myPhoto.png",
+//   //   image: "https://www.dimitrikokhtashvili.com/myPhoto.png",
 //   // },
 // };
 
@@ -80,10 +80,10 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://www.dimitrikokhtashvili.dev/myPhoto.png"
+          content="https://www.dimitrikokhtashvili.com/myPhoto.png"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dimitrikokhtashvili.dev" />
+        <meta property="og:url" content="https://www.dimitrikokhtashvili.com" />
         <meta property="og:locale" content="en-US" />
         <meta property="og:site_name" content="Dimitri Kokhtashvili" />
 
@@ -100,12 +100,12 @@ export default function RootLayout({
         <meta
           className="w-[1200px] h-auto"
           name="twitter:image"
-          content="https://www.dimitrikokhtashvili.dev/myPhoto.png"
+          content="https://www.dimitrikokhtashvili.com/myPhoto.png"
         />
         {/* <meta name="twitter:creator" content="@yourTwitterHandle" /> */}
 
         {/* Canonical URL to Avoid Duplicate Content Issues */}
-        <link rel="canonical" href="https://www.dimitrikokhtashvili.dev" />
+        <link rel="canonical" href="https://www.dimitrikokhtashvili.com" />
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
@@ -118,7 +118,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Dimitri Kokhtashvili",
-              url: "https://www.dimitrikokhtashvili.dev",
+              url: "https://www.dimitrikokhtashvili.com",
               sameAs: [
                 "https://github.com/dlkokhta",
                 "https://www.linkedin.com/in/dimitri-kokhtashvili-6a816a297/",
