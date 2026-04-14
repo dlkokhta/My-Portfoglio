@@ -6,20 +6,19 @@ const Projects = () => {
     <div className="mt-10 text-white">
       <h1 className="text-xl font-bold mb-5 text-center">Projects</h1>
 
-
-
-       <ProjectsDetails
-        projectName="entertainment-web-app"
-        projectImage="/entertainment-web-app.png"
+      <ProjectsDetails
+        projectName="LinguaAI"
+        projectImage="/linguaAI.png"
         projectDescription={[
-          "User registration",
-          "Filter options by movie name, move and TV series",
-          "Bookmarking feature for saving favorite movies and TV series",
-          "Error handling with clear messages during registration and login",
-          "Responsive interface for an enhanced user experience",
+          "AI-powered English immersion built for Georgian speakers",
+          "Topic and difficulty-based learning with text-to-speech playback",
+          "JWT auth with refresh token rotation and HttpOnly cookie storage",
+          "Google OAuth2, email verification, 2FA (TOTP), and password reset",
+          "Role-based access control with Admin panel and user management",
+          "Dockerized PostgreSQL with Prisma ORM and Swagger documentation",
         ]}
         projectTechnologies={[
-          " React, TypeScript, Redux, Node.js, Express, MongoDB, Yup, Joi, Tailwind",
+          " React, TypeScript, Vite, Framer Motion, Node.js, NestJS, PostgreSQL, Docker, Prisma, Resend, Tailwind CSS, Ubuntu Server",
         ]}
         projectSVGs={[
           {
@@ -87,8 +86,6 @@ const Projects = () => {
           "Swagger / OpenAPI documentation",
           "Dockerized PostgreSQL database with Prisma ORM",
         ]}
-
-        
         projectTechnologies={[
           "React, TypeScript, Vite, Framer Motion, Node.js, NestJS, PostgreSQL, Docker, Prisma, Resend, Tailwind CSS, Ubuntu Server",
         ]}
