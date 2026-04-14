@@ -121,7 +121,7 @@ const ProjectChatButton: React.FC<ProjectChatButtonProps> = ({
           <circle cx="5" cy="19" r="0.8" />
           <circle cx="19" cy="5" r="0.8" />
         </svg>
-        <span className="text-[10px] leading-none">Ask AI</span>
+        <span className="text-[14px] leading-none">Ask AI</span>
       </button>
 
       {/* Modal */}
