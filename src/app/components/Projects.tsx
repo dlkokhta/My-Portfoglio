@@ -23,15 +23,15 @@ const Projects = () => {
         projectSVGs={[
           {
             title: "Front-end",
-            pageLink: "https://entertainment-web-app-frontend-wine.vercel.app/",
+            pageLink: "https://linguaai.dimitrikokhtashvili.com/",
             githubLink:
-              "https://github.com/dlkokhta/entertainment-web-app-frontend/",
+              "https://github.com/dlkokhta/linguaai-frontend",
           },
 
           {
             title: "Back-end",
-            pageLink: "https://entertainment-web-app.dimitrikokhtashvili.site/",
-            githubLink: "https://github.com/dlkokhta/entertainment-web-app-API",
+            pageLink: "https://api.linguaai.dimitrikokhtashvili.com/docs",
+            githubLink: "https://github.com/dlkokhta/linguaai-backend",
           },
         ]}
       />
