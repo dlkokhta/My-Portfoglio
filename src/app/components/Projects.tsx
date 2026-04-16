@@ -103,34 +103,7 @@ const Projects = () => {
         ]}
       />
 
-      <ProjectsDetails
-        projectName="entertainment-web-app"
-        projectImage="/entertainment-web-app.png"
-        projectDescription={[
-          "User registration",
-          "Filter options by movie name, move and TV series",
-          "Bookmarking feature for saving favorite movies and TV series",
-          "Error handling with clear messages during registration and login",
-          "Responsive interface for an enhanced user experience",
-        ]}
-        projectTechnologies={[
-          " React, TypeScript, Redux, Node.js, Express, MongoDB, Yup, Joi, Tailwind",
-        ]}
-        projectSVGs={[
-          {
-            title: "Front-end",
-            pageLink: "https://entertainment-web-app-frontend-wine.vercel.app/",
-            githubLink:
-              "https://github.com/dlkokhta/entertainment-web-app-frontend/",
-          },
-
-          {
-            title: "Back-end",
-            pageLink: "https://entertainment-web-app.dimitrikokhtashvili.site/",
-            githubLink: "https://github.com/dlkokhta/entertainment-web-app-API",
-          },
-        ]}
-      />
+     
 
       <ProjectsDetails
         projectName="memory game"
@@ -152,33 +125,7 @@ const Projects = () => {
         ]}
       />
 
-      <ProjectsDetails
-        projectName="space-tourism-website"
-        projectImage="/space-tourism-websit.png"
-        projectDescription={[
-          " Explore detailed information about destinations, crew  members, and space technology",
-          "Toggle tabs to seamlessly switch between categories and learn more about each topic",
-          "Fully responsive design, optimized for desktop, tablet, and mobile viewing",
-          "Hover effects on interactive elements, enhancing user navigation and engagement",
-          "Visually engaging layout with smooth transitions and immersive imagery",
-        ]}
-        projectTechnologies={[" React, TypeScript, Tailwind, Express, MongoDB"]}
-        projectSVGs={[
-          {
-            title: "Front-end",
-            pageLink: "https://space-tourism-website-main-navy.vercel.app/",
-            githubLink:
-              "https://github.com/dlkokhta/space-tourism-website-main",
-          },
-          {
-            title: "Back-end",
-            pageLink:
-              "https://space-tourism-website-main-api-2-production.up.railway.app/",
-            githubLink:
-              "https://github.com/dlkokhta/space-tourism-website-main-API-2",
-          },
-        ]}
-      />
+     
 
       <ProjectsDetails
         projectName="password-generator"
@@ -241,79 +188,9 @@ const Projects = () => {
         ]}
       />
 
-      <ProjectsDetails
-        projectName="rest-countries-app"
-        projectImage="/rest-countries-app.png"
-        projectDescription={[
-          "Displays information about countries including population, region, capital, and flag.",
-          "Provides a search functionality to quickly find specific countries by name.",
-          "Includes a dropdown filter to view countries by region (e.g., Asia, Europe).",
-          "Shows detailed information for selected countries, such as native name, subregion, languages, currencies, and border countries.",
-          "Allows navigation to border countries by clicking on them in the detailed view.",
-          "Offers a dark mode.",
-          "Responsive design ensures an optimized experience across various devices.",
-        ]}
-        projectTechnologies={["  React, Tailwind"]}
-        projectSVGs={[
-          {
-            title: "Front-end",
-            pageLink:
-              "https://rest-countries-api-with-color-theme-switcher-master-smoky.vercel.app/",
-            githubLink:
-              "https://github.com/dlkokhta/rest-countries-api-with-color-theme-switcher-master",
-          },
-        ]}
-      />
+    
 
-      {/* <ProjectsDetails
-        projectName="todo-list-app"
-        projectImage="/todo-list.png"
-        projectDescription={[
-          "Add, Edit, and Delete Todos – Easily manage your tasks with a simple and intuitive interface.",
-          "Mark as Completed – Clicking 'Completed' moves the todo to the history view, replacing the normal todo list with completed tasks.",
-          "Search Functionality – Quickly find specific tasks using a search bar that filters todos by name.",
-          "State Management – Redux Toolkit handles global state management for efficient updates and reactivity.",
-        ]}
-        projectTechnologies={[
-          " React, TypeScript, Redux, Node.js, Express, SQLite, Yup, Joi, Tailwind",
-        ]}
-        projectSVGs={[
-          {
-            title: "Front-end",
-            pageLink: "https://to-do-list-app-dimitrikokhtashvili.vercel.app/",
-            githubLink: "https://github.com/dlkokhta/To-Do-List-App",
-          },
-
-          {
-            title: "Back-end",
-            pageLink: "https://to-do-app.dimitrikokhtashvili.site/",
-            githubLink: "https://github.com/dlkokhta/To-Do-List-App-API",
-          },
-        ]}
-      /> */}
-
-      {/* <ProjectsDetails
-        projectName=""
-        projectImage=""
-        projectDescription={[
-         
-        ]}
-        projectTechnologies={[
-          
-        ]}
-        projectSVGs={[
-          {
-            title: "Front-end",
-            pageLink: "",
-            githubLink: "",
-          },
-          {
-            title: "Back-end",
-            pageLink: "",
-            githubLink: "",
-          },
-        ]}
-      /> */}
+    
 
       <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-20"></div>
     </div>
