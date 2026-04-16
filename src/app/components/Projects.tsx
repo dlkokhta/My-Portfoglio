@@ -8,7 +8,7 @@ const Projects = () => {
 
       <ProjectsDetails
         projectName="LinguaAI"
-        projectImage="/linguaAI.png"
+        projectImage="/LinguaAI.png"
         projectDescription={[
           "AI-powered English immersion built for Georgian speakers",
           "Topic and difficulty-based learning with text-to-speech playback",
