@@ -7,6 +7,36 @@ const Projects = () => {
       <h1 className="text-xl font-bold mb-5 text-center">Projects</h1>
 
       <ProjectsDetails
+        projectName="workspaceBridge"
+        projectImage="/workspaceBridge.png"
+        projectDescription={[
+          "AI-powered English immersion built for Georgian speakers",
+          "Topic and difficulty-based learning with text-to-speech playback",
+          "JWT auth with refresh token rotation and HttpOnly cookie storage",
+          "Google OAuth2, email verification, 2FA (TOTP), and password reset",
+          "Role-based access control with Admin panel and user management",
+          "Dockerized PostgreSQL with Prisma ORM and Swagger documentation",
+        ]}
+        projectTechnologies={[
+          " React, TypeScript, Vite, Framer Motion, Node.js, NestJS, PostgreSQL, Docker, Prisma, Resend, Tailwind CSS, Ubuntu Server",
+        ]}
+        projectSVGs={[
+          {
+            title: "Front-end",
+            pageLink: "https://wb.dimitrikokhtashvili.com/",
+            githubLink: "https://github.com/dlkokhta/workspacebridge-frontend",
+          },
+
+          {
+            title: "Back-end",
+            pageLink:
+              "https://api.wb.dimitrikokhtashvili.com/docs",
+            githubLink: "https://github.com/dlkokhta/workspacebridge-backend",
+          },
+        ]}
+      />
+
+      <ProjectsDetails
         projectName="LinguaAI"
         projectImage="/LinguaAI.png"
         projectDescription={[
@@ -24,8 +54,7 @@ const Projects = () => {
           {
             title: "Front-end",
             pageLink: "https://linguaai.dimitrikokhtashvili.com/",
-            githubLink:
-              "https://github.com/dlkokhta/linguaai-frontend",
+            githubLink: "https://github.com/dlkokhta/linguaai-frontend",
           },
 
           {
@@ -103,8 +132,6 @@ const Projects = () => {
         ]}
       />
 
-     
-
       <ProjectsDetails
         projectName="memory game"
         projectImage="/memoryGame.png"
@@ -124,8 +151,6 @@ const Projects = () => {
           },
         ]}
       />
-
-     
 
       <ProjectsDetails
         projectName="password-generator"
@@ -187,10 +212,6 @@ const Projects = () => {
           },
         ]}
       />
-
-    
-
-    
 
       <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-20"></div>
     </div>
