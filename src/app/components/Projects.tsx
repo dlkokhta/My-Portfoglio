@@ -10,15 +10,21 @@ const Projects = () => {
         projectName="workspaceBridge"
         projectImage="/workspaceBridge.png"
         projectDescription={[
-          "AI-powered English immersion built for Georgian speakers",
-          "Topic and difficulty-based learning with text-to-speech playback",
-          "JWT auth with refresh token rotation and HttpOnly cookie storage",
-          "Google OAuth2, email verification, 2FA (TOTP), and password reset",
-          "Role-based access control with Admin panel and user management",
-          "Dockerized PostgreSQL with Prisma ORM and Swagger documentation",
+          "Freelancer–client collaboration platform with per-client workspace management",
+          "JWT authentication with refresh token rotation, Google OAuth, and two-factor authentication (TOTP)",
+          "Email verification and secure password recovery via Resend",
+          "Role-based access control (Freelancer / Client) with protected routes",
+          "Shareable invite links and magic-link email invitations for clients",
+          "Real-time messaging per workspace using Socket.io with message history",
+          "File management with Cloudinary storage and versioning",
+          "Collaborative whiteboard powered by Excalidraw, synced via Socket.io",
+          "Proposal workflow with Draft → Sent → Approved / Revision Requested states ",
+          "Client portal — minimal view scoped to a single workspace ",
+          
+          
         ]}
         projectTechnologies={[
-          " React, TypeScript, Vite, Framer Motion, Node.js, NestJS, PostgreSQL, Docker, Prisma, Resend, Tailwind CSS, Ubuntu Server",
+          "  React, TypeScript, Vite, Tailwind, Framer Motion, NestJS, PostgreSQL, Prisma, Socket.io, Cloudinary, Resend, JWT, Argon2, Excalidraw ",
         ]}
         projectSVGs={[
           {
