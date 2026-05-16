@@ -29,14 +29,14 @@ const Projects = () => {
         projectSVGs={[
           {
             title: "Front-end",
-            pageLink: "https://wb.dimitrikokhtashvili.com/",
+            pageLink: "https://workspacebridge.com/",
             githubLink: "https://github.com/dlkokhta/workspacebridge-frontend",
           },
 
           {
             title: "Back-end",
             pageLink:
-              "https://api.wb.dimitrikokhtashvili.com/docs",
+              "https://api.workspacebridge.com//docs",
             githubLink: "https://github.com/dlkokhta/workspacebridge-backend",
           },
         ]}
