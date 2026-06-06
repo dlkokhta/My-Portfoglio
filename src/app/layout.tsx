@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
-import Head from "next/head";
+import Providers from "./providers";
+import ThemeToggle from "./components/ThemeToggle";
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700"],
@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="UTF-8" />
         <meta name="language" content="English" />
@@ -131,10 +131,10 @@ export default function RootLayout({
         />
       </head>
       <body className={roboto.className}>
-        {/* <div className="lg:hidden">
-          <Header />
-        </div> */}
-        {children}
+        <Providers>
+          {children}
+          <ThemeToggle />
+        </Providers>
       </body>
     </html>
   );
