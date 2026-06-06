@@ -1,8 +1,15 @@
+import RotatingText from "./RotatingText";
+import { DEVELOPER_ROLES } from "../data/roles";
+
 const About = () => {
   return (
     <>
       <div className=" flex flex-col items-center mt-10 text-white">
         <h1 className="text-xl mb-5 font-bold">About Me</h1>
+
+        <p className="lg:hidden mb-5 text-lg font-light">
+          <RotatingText words={DEVELOPER_ROLES} />
+        </p>
 
         <p>
           Results-driven Full-Stack Developer with 4+ years of experience in

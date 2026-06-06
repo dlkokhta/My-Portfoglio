@@ -1,12 +1,16 @@
 import Menu from "./Menu";
 import Contact from "./Contact";
+import RotatingText from "./RotatingText";
+import { DEVELOPER_ROLES } from "../data/roles";
 
 const Header2 = () => {
   return (
     <div className="text-white hidden lg:block font-light">
       <div className="fixed mt-[30px] xl:mt-[100px]">
         <h1 className="text-4xl font-extrabold mb-3">Dimitri Kokhtashvili</h1>
-        <h2 className="text-center">Full Stack Developer</h2>
+        <h2 className="text-center">
+          <RotatingText words={DEVELOPER_ROLES} />
+        </h2>
       </div>
       <div className="fixed flex flex-col mt-[150px] xl:mt-[220px] lg:gap-5">
         <Menu />

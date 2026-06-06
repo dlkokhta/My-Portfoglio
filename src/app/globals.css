@@ -95,6 +95,27 @@ body {
   visibility: visible;
 }
 
+/* Typewriter caret blink */
+@keyframes caret-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-caret-blink {
+  animation: caret-blink 1s step-end infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-caret-blink {
+    animation: none;
+  }
+}
+
 /*
   * {
     outline: 1px solid red;
