@@ -1,5 +1,6 @@
 "use client";
 import Loading from "../components/Loading";
+import CursorGlow from "../components/CursorGlow";
 import { useState, useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -26,6 +27,7 @@ const HomePage = () => {
 
   return (
     <main className="px-7 sm:px-20 pt-5 pb-20 md:px-20 w-full flex flex-row lg:gap-[370px] lg:px-20 xl:gap-[400px] xl:px-40 2xl:px-80 3xl:px-[460px] 4xl:px-[500px]">
+      <CursorGlow />
       {isLoading ? (
         <Loading />
       ) : (
