@@ -10,14 +10,14 @@ const Header = () => {
   return (
     //header1 animation
     //   <div
-    //   className={`fixed top-0 left-0 w-full bg-[#0a192f] text-white z-50 transition-transform duration-500 ${
+    //   className={`fixed top-0 left-0 w-full bg-background text-foreground z-50 transition-transform duration-500 ${
     //     isScrollingDown ? "-translate-y-full" : "translate-y-0"
     //   }`}
     // >
     <div
-      className={`fixed top-0 left-0 w-full bg-[#0a192f] text-white z-50 transition-transform duration-500 `}
+      className={`fixed top-0 left-0 w-full bg-background text-foreground z-50 transition-transform duration-500 `}
     >
-      <div className=" flex justify-between items-center px-7 py-5 w-full bg-[#0a192f] text-white z-50 xl:px-32">
+      <div className=" flex justify-between items-center px-7 py-5 w-full bg-background text-foreground z-50 xl:px-32">
         <div className="flex items-center gap-5">
           <div className="rounded-full overflow-hidden w-12 h-12 bg-yellow-300">
             <Image src="/myPhoto.png" alt="My Photo" width={500} height={500} />

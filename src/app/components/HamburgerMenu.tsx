@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
+import { FiMenu } from "react-icons/fi";
 
 import Menu from "../components/Menu";
 
@@ -9,14 +9,14 @@ const HamburgerMenu = () => {
 
   return (
     <div>
-      <Image
-        className="relative w-full cursor-pointer hover:animate-none"
-        alt="hamburger menu icon"
-        width={500}
-        height={500}
+      <button
+        type="button"
+        aria-label="Open menu"
         onClick={() => setIsHamburgerOpen(true)}
-        src="/hamburger.svg"
-      />
+        className="cursor-pointer text-2xl text-foreground"
+      >
+        <FiMenu />
+      </button>
       {isHamburgerOpen && (
         <div
           onClick={() => setIsHamburgerOpen(false)}
@@ -24,7 +24,7 @@ const HamburgerMenu = () => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="h-screen w-[150px]  bg-white bg-opacity-5 backdrop-blur-lg  font-thin ml-auto p-5 flex flex-col gap-4"
+            className="h-screen w-[150px]  bg-background/95 dark:bg-white/5 backdrop-blur-lg  font-thin ml-auto p-5 flex flex-col gap-4"
           >
             <div className="flex flex-col gap-3">
               <Menu />
