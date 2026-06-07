@@ -4,7 +4,7 @@ import { DEVELOPER_ROLES } from "../data/roles";
 const About = () => {
   return (
     <>
-      <div className=" flex flex-col items-center mt-10 text-white">
+      <div className=" flex flex-col items-center mt-10 text-foreground">
         <h1 className="text-xl mb-5 font-bold">About Me</h1>
 
         <p className="lg:hidden mb-5 text-lg font-light">
@@ -19,7 +19,7 @@ const About = () => {
           ensure secure authentication flows.
         </p>
       </div>
-      <div className="to-transparen h-[0.5px] bg-gradient-to-r from-transparent via-slate-400  mt-20"></div>
+      <div className="to-transparen h-[0.5px] bg-gradient-to-r from-transparent via-muted  mt-20"></div>
     </>
   );
 };

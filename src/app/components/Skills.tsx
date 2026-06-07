@@ -60,7 +60,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className="mt-10 text-white">
+      <div className="mt-10 text-foreground">
         <h1 className="text-center text-xl font-bold">Skills</h1>
         <h4 className="mt-5 mb-5 font-light break-words block">
           Programming Languages, Libraries, frameworks and tools:
@@ -76,10 +76,10 @@ const Skills = () => {
 
               return (
                 <div key={group.category}>
-                  <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-300">
+                  <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted">
                     {group.category}
                   </h3>
-                  <div className="flex flex-wrap gap-4 text-black">
+                  <div className="flex flex-wrap gap-4">
                     {group.items.map((skill, itemIndex) => (
                       <SkillsDetails
                         key={skill}
@@ -94,7 +94,7 @@ const Skills = () => {
           </div>
         )}
       </div>
-      <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-10"></div>
+      <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-muted mt-10"></div>
     </>
   );
 };

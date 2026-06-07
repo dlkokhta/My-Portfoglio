@@ -10,7 +10,7 @@ const SkillsDetails = ({ name, delay = 0 }: SkillsDetailsProps) => {
 
   return (
     <button
-      className="flex items-center gap-1.5 border-none rounded-full bg-white px-3 py-1 text-sm h-full hover:scale-105 duration-300 opacity-0 translate-y-[80px] animate-slide-up will-change-[transform,opacity]"
+      className="flex items-center gap-1.5 border-none rounded-full bg-foreground text-background dark:text-black px-3 py-1 text-sm h-full hover:scale-105 duration-300 opacity-0 translate-y-[80px] animate-slide-up will-change-[transform,opacity]"
       style={{
         animationDelay: `${delay}s`,
         animationFillMode: 'forwards',
