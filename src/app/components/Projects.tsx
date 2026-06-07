@@ -3,7 +3,7 @@ import ProjectsDetails from "../components/ProjectsDetails";
 
 const Projects = () => {
   return (
-    <div className="mt-10 text-white">
+    <div className="mt-10 text-foreground">
       <h1 className="text-xl font-bold mb-5 text-center">Projects</h1>
 
       <ProjectsDetails
@@ -219,7 +219,7 @@ const Projects = () => {
         ]}
       />
 
-      <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-slate-400 mt-20"></div>
+      <div className="to-transparen h-[1px] bg-gradient-to-r from-transparent via-muted mt-20"></div>
     </div>
   );
 };
