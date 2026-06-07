@@ -2,7 +2,7 @@ import Image from "next/image";
 const Certificates = () => {
   return (
     <>
-      <div className="text-white flex flex-col items-center mt-20 mb-20">
+      <div className="text-foreground flex flex-col items-center mt-20 mb-20">
         <h3 className="text-xl font-bold mb-5 text-center">Certifications</h3>
         <div className="">
           <p className="mb-3">Meta Front-End Developer</p>
