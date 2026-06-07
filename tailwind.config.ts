@@ -9,7 +9,16 @@ const config: Config = {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: "hsl(var(--background) / <alpha-value>)",
+        foreground: "hsl(var(--foreground) / <alpha-value>)",
+        muted: "hsl(var(--muted) / <alpha-value>)",
+        card: "hsl(var(--card) / <alpha-value>)",
+        border: "hsl(var(--border) / <alpha-value>)",
+        accent: "hsl(var(--accent) / <alpha-value>)",
+      },
+    },
     screens: {
       sm: "640px", // => @media (min-width: 640px) { ... }
       md: "768px", // => @media (min-width: 768px) { ... }

@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Theme tokens — HSL channels so Tailwind opacity modifiers keep working
+   (e.g. bg-background/50). next-themes toggles class="dark" on <html>;
+   :root holds the light values, .dark overrides them. */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 215.7 64.9% 11.2%;
+  --muted: 215 16% 40%;
+  --card: 210 40% 98%;
+  --border: 214 32% 91%;
+  --accent: 192 88% 36%;
+}
+
+.dark {
+  --background: 215.7 64.9% 11.2%; /* exactly #0a192f — dark stays unchanged */
+  --foreground: 0 0% 100%;
+  --muted: 215 20% 65%;
+  --card: 217 45% 16%;
+  --border: 216 34% 25%;
+  --accent: 166 100% 70%; /* #64ffda */
+}
+
 /* * {
     @apply m-0 p-0 box-border;
   }
@@ -10,7 +31,8 @@ body {
   /* overflow-x: hidden; */
   width: 100%;
   min-height: 100vh;
-  background-color: #0a192f;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
 
 #root {
