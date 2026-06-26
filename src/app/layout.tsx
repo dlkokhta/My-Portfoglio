@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
@@ -9,31 +9,81 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-// export const metadata: Metadata = {
-//   title: "Dimitri Kokhtashvili | Full-Stack Developer | React, Next.js, Express.js Expert",
-//   description: "Full-Stack Developer skilled in React, Next.js, and MongoDB, creating responsive web apps.",
-//   robots: "index, follow",
-//   keywords: "Full-Stack Developer, React, Next.js, MongoDB, Express.js, Web Development",
-//   openGraph: {
-//     title: "Dimitri Kokhtashvili | Full-Stack Developer",
-//     type: "website",
-//     images: ["https://www.dimitrikokhtashvili.com/myPhoto.png"],
-//     url: "https://www.dimitrikokhtashvili.com",
-//     description: "Skilled developer in React, Node.js, MongoDB. Creating scalable, responsive web applications.",
-//     locale:"en_US",
-//     siteName:"Dimitri Kokhtashvili",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.dimitrikokhtashvili.com"),
+  title: "Dimitri Kokhtashvili - Web Developer Portfolio",
+  description:
+    "I'm Dimitri Kokhtashvili, a passionate web developer. Explore my portfolio showcasing my projects in Next.js, React, and modern web technologies.",
+  authors: [
+    {
+      name: "Dimitri Kokhtashvili",
+      url: "https://www.dimitrikokhtashvili.com",
+    },
+  ],
+  keywords: [
+    "Dimitri Kokhtashvili",
+    "web developer",
+    "portfolio",
+    "Next.js",
+    "React",
+    "Frontend",
+    "Full-stack",
+    "JavaScript",
+    "Tailwind CSS",
+  ],
+  robots: { index: true, follow: true },
+  alternates: {
+    canonical: "https://www.dimitrikokhtashvili.com",
+  },
+  openGraph: {
+    title: "Dimitri Kokhtashvili - Web Developer Portfolio",
+    description:
+      "Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies.",
+    url: "https://www.dimitrikokhtashvili.com",
+    siteName: "Dimitri Kokhtashvili",
+    images: [
+      {
+        url: "/myPhoto.png",
+        width: 1200,
+        height: 630,
+        alt: "Dimitri Kokhtashvili - Web Developer",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dimitri Kokhtashvili - Web Developer Portfolio",
+    description:
+      "Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies.",
+    images: ["/myPhoto.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  formatDetection: { telephone: true },
+  other: { copyright: "© 2025 Dimitri Kokhtashvili" },
+};
 
-//   },
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
-//   viewport: "width=device-width, initial-scale=1.0",
-//     authors: [{ name: "Dimitri Kokhtashvili", url: "https://www.dimitrikokhtashvili.com" }],
-//   // twitter: {
-//   //   card: "summary_large_image",
-//   //   title: "Dimitri Kokhtashvili - Portfolio",
-//   //   description: "Explore Dimitri's full-stack development projects and skills.",
-//   //   image: "https://www.dimitrikokhtashvili.com/myPhoto.png",
-//   // },
-// };
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Dimitri Kokhtashvili",
+  url: "https://www.dimitrikokhtashvili.com",
+  sameAs: [
+    "https://github.com/dlkokhta",
+    "https://www.linkedin.com/in/dimitri-kokhtashvili-6a816a297/",
+  ],
+  jobTitle: "Web Developer",
+  description:
+    "I'm a passionate web developer specializing in Next.js, React, and modern web technologies.",
+};
 
 export default function RootLayout({
   children,
@@ -42,95 +92,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="language" content="English" />
-        <meta
-          name="title"
-          content="Dimitri Kokhtashvili - Web Developer Portfolio"
-        />
-        <meta name="copyright" content="© 2025 Dimitri Kokhtashvili" />
-        <meta name="language" content="English" />
-        {/* Essential Meta Tags */}
-        <title>Dimitri Kokhtashvili - Web Developer Portfolio</title>
-        <meta name="author" content="Dimitri Kokhtashvili" />
-        <meta
-          name="description"
-          content="I'm Dimitri Kokhtashvili, a passionate web developer. Explore my portfolio showcasing my projects in Next.js, React, and modern web technologies."
-        />
-        <meta
-          name="keywords"
-          content="Dimitri Kokhtashvili, web developer, portfolio, Next.js, React, Frontend, Full-stack, JavaScript, Tailwind CSS"
-        />
-        <meta name="robots" content="index, follow" />
-
-        {/* Mobile Optimization */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="format-detection" content="telephone=yes" />
-        <meta name="HandheldFriendly" content="true" />
-
-        {/* Open Graph (Facebook, LinkedIn) */}
-        <meta
-          property="og:title"
-          content="Dimitri Kokhtashvili - Web Developer Portfolio"
-        />
-        <meta
-          property="og:description"
-          content="Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies."
-        />
-        <meta
-          property="og:image"
-          content="https://www.dimitrikokhtashvili.com/myPhoto.png"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.dimitrikokhtashvili.com" />
-        <meta property="og:locale" content="en-US" />
-        <meta property="og:site_name" content="Dimitri Kokhtashvili" />
-
-        {/* Twitter Card (for better link previews on Twitter/X) */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Dimitri Kokhtashvili - Web Developer Portfolio"
-        />
-        <meta
-          name="twitter:description"
-          content="Explore my portfolio showcasing my web development projects and skills in React, Next.js, and modern web technologies."
-        />
-        <meta
-          className="w-[1200px] h-auto"
-          name="twitter:image"
-          content="https://www.dimitrikokhtashvili.com/myPhoto.png"
-        />
-        {/* <meta name="twitter:creator" content="@yourTwitterHandle" /> */}
-
-        {/* Canonical URL to Avoid Duplicate Content Issues */}
-        <link rel="canonical" href="https://www.dimitrikokhtashvili.com" />
-
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-
-        {/* JSON-LD Structured Data for Google (SEO Boost) */}
+      <body className={roboto.className}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Dimitri Kokhtashvili",
-              url: "https://www.dimitrikokhtashvili.com",
-              sameAs: [
-                "https://github.com/dlkokhta",
-                "https://www.linkedin.com/in/dimitri-kokhtashvili-6a816a297/",
-              ],
-              jobTitle: "Web Developer",
-              description:
-                "I'm a passionate web developer specializing in Next.js, React, and modern web technologies.",
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-      </head>
-      <body className={roboto.className}>
         <Providers>
           {children}
           <ThemeToggle />
