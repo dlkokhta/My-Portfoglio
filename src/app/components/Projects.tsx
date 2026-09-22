@@ -36,7 +36,7 @@ const Projects = () => {
           {
             title: "Back-end",
             pageLink:
-              "https://api.workspacebridge.com//docs",
+              "https://api.workspacebridge.com/docs",
             githubLink: "https://github.com/dlkokhta/workspacebridge-backend",
           },
         ]}
